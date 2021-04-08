@@ -1,0 +1,17 @@
+
+    nav {
+        display: flex;
+        width: 13.5em;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .wrapper nav {
+        order: 1;
+        overflow-y: auto;
+        flex: 0 0 200px;
+        height:100%;
+        background-color: #191a1c;
+    }

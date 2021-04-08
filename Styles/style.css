@@ -9,8 +9,43 @@
   color: #ddd;
 }
 
+#projects-content a {
+  text-decoration: none;
+}
+#projects-content h2 {
+  color: #ddd;
+  text-decoration: none;
+}
+#projects-content span {
+  color: #ddd;
+}
+
+nav {
+  display: flex;
+  width: 13.5em;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.wrapper nav {
+  order: 1;
+  overflow-y: auto;
+  flex: 0 0 200px;
+  height: 100%;
+  background-color: #191a1c;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper main {
+  background-color: #191a1c;
+  margin-left: 13.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
