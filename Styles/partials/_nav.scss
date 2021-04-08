@@ -6,6 +6,14 @@
         position: fixed;
         top: 0;
         left: 0;
+
+        a {
+            color: #ddd;
+        }
+
+        li {
+            color: #ddd;
+        }
     }
 
     .wrapper nav {
@@ -14,4 +22,5 @@
         flex: 0 0 200px;
         height:100%;
         background-color: #191a1c;
+        border-right: 3px solid #a51708;
     }

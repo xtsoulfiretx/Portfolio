@@ -5,7 +5,32 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Bree Serif', serif;
+            font-size: 4rem;
             color: #ddd;
+            text-shadow: 5px 5px 5px #111;
+        }
+
+        span {
+            color: #ddd;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px #111;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        #scroll-down {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
         }
     }

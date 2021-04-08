@@ -5,11 +5,41 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+#header-home h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 4rem;
   color: #ddd;
+  text-shadow: 5px 5px 5px #111;
+}
+#header-home span {
+  color: #ddd;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px #111;
+  margin-top: 1.5rem;
+}
+#header-home a {
+  color: #ddd;
+  text-decoration: none;
+}
+#header-home #scroll-down {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
 }
 
+#projects-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
 #projects-content a {
+  display: flex;
   text-decoration: none;
 }
 #projects-content h2 {
@@ -17,6 +47,28 @@
   text-decoration: none;
 }
 #projects-content span {
+  color: #ddd;
+}
+#projects-content .project {
+  margin-bottom: 50px;
+}
+@media (min-width: 1281px) {
+  #projects-content .project {
+    width: 32%;
+  }
+}
+@media (min-width: 768px) {
+  #projects-content .project {
+    width: 48%;
+  }
+}
+@media (max-width: 767px) {
+  #projects-content .project {
+    width: 100%;
+  }
+}
+
+#contact-info {
   color: #ddd;
 }
 
@@ -28,6 +80,12 @@ nav {
   top: 0;
   left: 0;
 }
+nav a {
+  color: #ddd;
+}
+nav li {
+  color: #ddd;
+}
 
 .wrapper nav {
   order: 1;
@@ -35,6 +93,7 @@ nav {
   flex: 0 0 200px;
   height: 100%;
   background-color: #191a1c;
+  border-right: 3px solid #a51708;
 }
 
 * {
