@@ -1,0 +1,16 @@
+#header-home {
+  background: url(../images/fire-banner.jpg) no-repeat center;
+}
+#header-home #banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

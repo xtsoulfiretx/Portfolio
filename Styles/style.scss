@@ -1,0 +1,11 @@
+// partial imports
+@import 'partials/header',
+        'partials/projects',
+        'partials/contact',
+        'partials/nav';
+
+// Universal Selectors
+
+    * {
+        box-sizing: border-box;
+    }
