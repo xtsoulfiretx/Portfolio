@@ -17,10 +17,13 @@
         h2 {
             color: #ddd;
             text-decoration: none;
+            margin-top: 1rem;
+            margin-bottom: 5px;
         }
 
         span {
             color: #ddd;
+            margin-top: 1rem;
         }
 
         i {
@@ -34,19 +37,32 @@
             width: calc(33.3% - 12px);
             margin-bottom: 2em;
 
+            // &:hover {
+            //     box-shadow: 0 0 15px #df3502;
+            // }
+        }
             .project-img {
                 flex-shrink: 1;
                 height: 35vh;
                 overflow: hidden;
                 max-height: 250px;
                 border-radius: 5px;
+                &:hover {
+                    box-shadow: 0 0 20px #df3502;
+                }
 
                 img {
                     width: 100%;
                     position: relative;
                     object-fit: contain;
                     vertical-align: middle;
+                    transform-origin: top;
+                    transition: all .5s;
+
+                    &:hover {
+                        opacity: .5;
+                        transform: scale(1.05);
+                    }
                 }
             }
-        }
     }
