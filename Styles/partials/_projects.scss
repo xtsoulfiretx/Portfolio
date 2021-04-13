@@ -7,6 +7,7 @@
         justify-content: space-between;
         max-width: 90%;
         margin: auto;
+        font-family: 'Roboto', serif;
 
         a {
             display: flex;
@@ -22,19 +23,30 @@
             color: #ddd;
         }
 
+        i {
+            color: #ddd;
+        }
+
         .project {
-            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: calc(33.3% - 12px);
+            margin-bottom: 2em;
 
-            @media (min-width: 1281px) {
-                width: 32%;
-            }
+            .project-img {
+                flex-shrink: 1;
+                height: 35vh;
+                overflow: hidden;
+                max-height: 250px;
+                border-radius: 5px;
 
-            @media (min-width: 768px) {
-                width: 48%;
-            }
-
-            @media (max-width: 767px) {
-                width: 100%;
+                img {
+                    width: 100%;
+                    position: relative;
+                    object-fit: contain;
+                    vertical-align: middle;
+                }
             }
         }
     }
