@@ -37,9 +37,20 @@
             width: calc(33.3% - 12px);
             margin-bottom: 2em;
 
-            // &:hover {
-            //     box-shadow: 0 0 15px #df3502;
-            // }
+            &:hover {
+                h2 {
+                        color: #a51708;
+                }
+                span {
+                    color: #a51708;
+                }
+                i {
+                    color: #a51708;
+                }
+                .project-img {
+                    box-shadow: 0 0 20px #df3502;
+                }
+            }
         }
             .project-img {
                 flex-shrink: 1;
@@ -47,9 +58,6 @@
                 overflow: hidden;
                 max-height: 250px;
                 border-radius: 5px;
-                &:hover {
-                    box-shadow: 0 0 20px #df3502;
-                }
 
                 img {
                     width: 100%;

@@ -68,8 +68,8 @@
                         <div id="contact-info">
                             <h2>Get in Touch</h2>
                             <span>If you would like to contact me you can either send me a message through this contact form or you can give me a ring on.</span>
-                            <a href="+447505554932" title="Call +447505554932"><h2>07505554932</h2></a>
-                            <a href="mailto:alexi.lambrou@gmail.com"><h2>Email: alexi.lambrou&commat;gmail.com</h2></a>
+                            <a href="+447505554932" title="Call +447505554932"><h2 class="phone-call">07505554932</h2></a>
+                            <a href="mailto:alexi.lambrou@gmail.com"><h2>alexi.lambrou&commat;gmail.com</h2></a>
                         </div>
                         <form id="contact-form" method="POST">
                             <div class="first-line-form-input">
@@ -78,7 +78,7 @@
                             </div>
                             <input type="email" placeholder="Email Address*" id="email" class="style-input">
                             <input type="text" placeholder="Subject" id="subject" class="style-input">
-                            <input type="text" placeholder="Message" id="message" class="style-input">
+                            <input type="textarea" placeholder="Message" id="message" class="style-input" rows="6" style="resize: none;">
                             <button>Submit</button>
                         </form>
                     </div>
@@ -86,16 +86,19 @@
                 <a href="#top" id="scroll-up"></a>
             </main>
             <nav>
-                <a href="#top" id="nav-initial">
-                    <span>"O"<span class="letters">A.L</span></span>
-                </a>
-                <ul id="nav-list">
-                    <li>About Me</li>
-                    <li>My Portfolio</li>
-                    <li>Coding Examples</li>
-                    <li>SCS Scheme</li>
-                </ul>
-                <ul id="nav-social"></ul>
+               <div id="nav-content"> 
+                    <a href="#top" id="nav-initial">
+                        <div class="circle-wrap"><h1 class="letters">A.L</h1></div>
+                    </a>
+                    <ul id="nav-list">
+                        <li><a href="#top">About Me</a></li>
+                        <li><a href="#top">My Portfolio</a></li>
+                        <li><a href="#top">Coding Examples</a></li>
+                        <li><a href="#top">SCS Scheme</a></li>
+                        <li><a href="#top" class="contact-nav">Contact Me</a></li>
+                    </ul>
+                    <ul id="nav-social"></ul>
+               </div>
             </nav>
         </div>
     </body>
