@@ -1,5 +1,6 @@
     #header-home {
         background: url(../images/fire-banner.jpg) no-repeat center;
+        box-shadow: 0 5px 30px #000;
 
         #banner {
             display: flex;
@@ -33,5 +34,10 @@
             margin: 10px 0;
             text-align: center;
             font-family: 'Roboto', serif;
+            font-size: 2rem;
+
+            a {
+                font-size: 1.5rem;
+            }
         }
     }

@@ -1,4 +1,6 @@
 
+    //Main Nav styling//
+
     nav {
         display: flex;
         width: 13.5em;
@@ -8,8 +10,8 @@
         left: 0;
         font-family: 'Bree Serif', serif;
         background: rgb(25,26,28);
-        background: linear-gradient(180deg, rgba(25,26,28,1) 81%, rgba(165,23,8,1) 100%);
-        
+        background: linear-gradient(180deg, rgba(25,26,28,1) 70%, rgba(165,23,8,1) 100%);
+
         a {
             color: #ddd;
         }
@@ -60,9 +62,11 @@
         border-right: 3px solid #a51708;
     }
 
+
+    //Nav items styling// 
+    
     #nav-list {
         list-style: none;
-        padding: 10px 10px;
         text-align: center;
         
         a {
@@ -80,5 +84,40 @@
 
         li {
             margin: 40px 0;
+
+            &:last-child {
+                padding: 5px 0 8px 0;
+                border-top: 3px solid #a51708;
+                border-bottom: 3px solid #a51708!important;
+                transition: .5s;    
+            }
+
+            &:last-child:hover {
+                    background-color: #a51708;
+                    box-shadow: 0 0 15px #df3502;
+                    a {
+                        border-bottom: 2px solid #191a1c;
+                        color: #191a1c;
+                    }
+            }
+        }
+    }
+
+    #nav-social {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none;
+
+        i {
+            color: #a51708;
+            font-size: 2.5rem;
+            transition: .5s;
+
+            &:hover {
+                color: #191a1c;
+                text-shadow: 0 0 15px #df3502;
+            }
         }
     }

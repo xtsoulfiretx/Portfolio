@@ -36,10 +36,12 @@
             position: relative;
             width: calc(33.3% - 12px);
             margin-bottom: 2em;
+            transition: .5s;
 
             &:hover {
                 h2 {
                         color: #a51708;
+                        text-shadow: 0 0 20px #df3502;
                 }
                 span {
                     color: #a51708;
