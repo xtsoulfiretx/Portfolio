@@ -38,6 +38,14 @@
 
             a {
                 font-size: 1.5rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            i {
+                color:#ddd;
             }
         }
     }

@@ -35,6 +35,12 @@
 #header-home #scroll-down a {
   font-size: 1.5rem;
 }
+#header-home #scroll-down a:hover {
+  text-decoration: underline;
+}
+#header-home #scroll-down i {
+  color: #ddd;
+}
 
 #projects-content {
   display: flex;
@@ -108,21 +114,44 @@
   color: #ddd;
   flex-basis: 500px;
   padding-right: 20px;
+  font-size: 1.5rem;
 }
 #contact-info h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #a51708;
+  font-size: 1.7rem;
 }
 #contact-info a {
-  color: #ddd;
+  color: #a51708;
   text-decoration: none;
 }
+#contact-info a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 20px #df3502;
+}
 #contact-info .phone-call {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #contact-form {
   width: 100%;
+}
+#contact-form button {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  background-color: #191a1c;
+  color: #a51708;
+  padding: 10px 15px;
+  border: 3px solid #a51708;
+  border-radius: 0 15px 0 15px;
+  transition: 0.5s;
+}
+#contact-form button:hover {
+  color: #191a1c;
+  background: #a51708;
+  border-color: #191a1c;
+  box-shadow: 0 0 15px #df3502;
 }
 
 #contact-content {
@@ -200,6 +229,7 @@ nav #nav-initial .circle-wrap {
   border-radius: 50px;
   width: 100px;
   height: 100px;
+  transition: 0.5s;
 }
 nav #nav-initial .circle-wrap:hover {
   box-shadow: 0 0 20px #df3502;
@@ -268,6 +298,33 @@ nav #nav-initial .circle-wrap h1 {
 #nav-social i:hover {
   color: #191a1c;
   text-shadow: 0 0 15px #df3502;
+}
+
+#about-me-page {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+#about-me-page header {
+  background-color: #09090a;
+  box-shadow: 0 5px 20px #000;
+}
+#about-me-page header h1 {
+  color: #a51708;
+  font-size: 3rem;
+}
+#about-me-page .about-content {
+  text-align: left;
+}
+#about-me-page .about-content h2 {
+  margin-left: 20px;
+  color: #a51708;
+}
+#about-me-page .about-content p {
+  margin-left: 20px;
+}
+#about-me-page .about-content li {
+  margin-left: 20px;
+  list-style: none;
 }
 
 * {
