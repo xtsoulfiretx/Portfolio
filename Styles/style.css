@@ -72,9 +72,19 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: calc(33.3% - 12px);
+  width: 100%;
   margin-bottom: 2em;
   transition: 0.5s;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #projects-content .project {
+    width: calc(50% - 12px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  #projects-content .project {
+    width: calc(33.3% - 12px);
+  }
 }
 #projects-content .project:hover h2 {
   color: #a51708;
@@ -196,7 +206,7 @@
 }
 
 nav {
-  display: flex;
+  display: none;
   width: 13.5em;
   z-index: 1;
   position: fixed;
@@ -416,14 +426,14 @@ nav #nav-initial .circle-wrap h1 {
 }
 #scs-page .scs-content {
   width: 100%;
-  padding: 0 20%;
+  padding: 0 15%;
   text-align: left;
 }
 #scs-page .scs-intro {
   display: flex;
   justify-content: space-between;
   padding-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 #scs-page .scs-intro h2 {
   width: 40%;
@@ -442,7 +452,63 @@ nav #nav-initial .circle-wrap h1 {
 #scs-page .netmatters {
   width: 48%;
   padding: 0 4rem 2rem;
-  box-shadow: 0 0 20px #0f1012;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #df3502;
+}
+#scs-page .treehouse p,
+#scs-page .netmatters p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+#scs-page .treehouse h3,
+#scs-page .netmatters h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #5fcf80;
+}
+#scs-page .treehouse a,
+#scs-page .netmatters a {
+  color: #ddd;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+#scs-page .treehouse a:hover,
+#scs-page .netmatters a:hover {
+  color: #5fcf80;
+  text-decoration: underline;
+}
+#scs-page .treehouse li,
+#scs-page .netmatters li {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+#scs-page .treehouse-netmatters-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100px;
+  margin-top: 20px;
+}
+#scs-page .treehouse-netmatters-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper main {
+    margin-left: 13.5em;
+  }
 }
 
 * {
@@ -453,7 +519,23 @@ nav #nav-initial .circle-wrap h1 {
 
 .wrapper main {
   background-color: #191a1c;
-  margin-left: 13.5em;
+}
+.wrapper main #scroll-up {
+  display: block;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Roboto", serif;
+  font-size: 2rem;
+  color: #ddd;
+}
+.wrapper main #scroll-up a {
+  font-size: 1.5rem;
+}
+.wrapper main #scroll-up a:hover {
+  text-decoration: underline;
+}
+.wrapper main #scroll-up i {
+  color: #ddd;
 }
 
 #projects {

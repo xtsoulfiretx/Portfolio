@@ -22,7 +22,7 @@
 
     .scs-content {
         width: 100%;
-        padding: 0 20%;
+        padding: 0 15%;
         text-align: left;
     }
 
@@ -30,7 +30,7 @@
         display: flex;
         justify-content: space-between;
         padding-top: 80px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
 
         h2 {
             width: 40%;
@@ -53,6 +53,52 @@
     .netmatters {
         width: 48%;
         padding: 0 4rem 2rem;
-        box-shadow: 0 0 20px #0f1012;
+        border-radius: 25px;
+        box-shadow: 0 0 20px #df3502;
+
+        p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #5fcf80;
+        }
+
+        a {
+            color: #ddd;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-decoration: none;
+
+            &:hover {
+                color: #5fcf80;
+                text-decoration: underline;
+            }
+        }
+
+        li {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+    }
+
+    .treehouse-netmatters-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 100px;
+        margin-top: 20px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
 }

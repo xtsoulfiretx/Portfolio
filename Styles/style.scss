@@ -5,7 +5,8 @@
         'partials/nav',
         'partials/about',
         'partials/coding',
-        'partials/scs';
+        'partials/scs',
+        'partials/media';
 
 // Universal Selectors
 
@@ -17,7 +18,27 @@
 
     .wrapper main {
         background-color: #191a1c;
-        margin-left: 13.5em;
+
+       #scroll-up {
+        display: block;
+        padding-bottom: 20px;
+        text-align: center;
+        font-family: 'Roboto', serif;
+        font-size: 2rem;
+        color: #ddd;
+
+        a {
+            font-size: 1.5rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        i {
+            color:#ddd;
+        }
+       }
     }
 
     #projects {
