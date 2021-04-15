@@ -303,28 +303,69 @@ nav #nav-initial .circle-wrap h1 {
 #about-me-page {
   text-align: center;
   font-family: "Bree Serif", serif;
+  color: #ddd;
 }
 #about-me-page header {
-  background-color: #09090a;
-  box-shadow: 0 5px 20px #000;
+  background-color: #a51708;
+  box-shadow: 0 5px 15px #a51708;
 }
 #about-me-page header h1 {
-  color: #a51708;
+  color: #191a1c;
   font-size: 3rem;
+  padding: 15px 0px;
+}
+#about-me-page main {
+  height: 100vh;
 }
 #about-me-page .about-content {
   text-align: left;
+  padding: 0 20%;
+}
+#about-me-page .about-content .about-personal {
+  margin-top: 80px;
+}
+#about-me-page .about-content .about-experience {
+  border-left: 2px solid #a51708;
+}
+#about-me-page .about-content a {
+  font-size: 1.3rem;
+  color: #a51708;
+  text-decoration: none;
+}
+#about-me-page .about-content a:hover {
+  text-decoration: underline;
 }
 #about-me-page .about-content h2 {
-  margin-left: 20px;
+  font-size: 2.2rem;
+  margin-top: 50px;
   color: #a51708;
+  border-bottom: 2px solid #a51708;
+  padding-left: 10px;
 }
 #about-me-page .about-content p {
-  margin-left: 20px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  padding-left: 10px;
 }
-#about-me-page .about-content li {
-  margin-left: 20px;
-  list-style: none;
+#about-me-page .about-content h3 {
+  display: inline-block;
+  color: #a51708;
+  padding-top: 15px;
+  font-size: 1.6rem;
+  padding-left: 10px;
+  border-bottom: 3px solid #a51708;
+  border-bottom-left-radius: 10px;
+}
+#about-me-page .about-content h4 {
+  padding-top: 5px;
+  font-size: 1.4rem;
+  padding-left: 10px;
+  font-weight: 500;
+}
+#about-me-page .about-content h5 {
+  font-size: 1rem;
+  padding-left: 10px;
+  font-weight: 400;
 }
 
 * {

@@ -1,31 +1,80 @@
 #about-me-page {
     text-align: center;
     font-family:'Bree Serif', serif;
+    color: #ddd;
 
     header {
-        background-color: #09090a;
-        box-shadow: 0 5px 20px #000;
+        background-color: #a51708;
+        box-shadow: 0 5px 15px #a51708;
 
         h1 {
-            color: #a51708;
+            color: #191a1c;
             font-size: 3rem;
+            padding: 15px 0px;
         }
     }  
 
+    main {
+        height: 100vh;
+    }
+
     .about-content {
         text-align: left;
-        h2 {
-            margin-left: 20px;
+        padding: 0 20%;
+
+        .about-personal {
+            margin-top: 80px;
+        }
+
+        .about-experience {
+            border-left: 2px solid #a51708;
+        }
+
+        a {
+            font-size: 1.3rem;
             color: #a51708;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 50px;
+            color: #a51708;
+            border-bottom: 2px solid #a51708;
+            padding-left: 10px;
         }
 
         p {
-            margin-left: 20px;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            padding-left: 10px;
         }
 
-        li {
-            margin-left: 20px;
-            list-style: none;
+        h3 {
+            display: inline-block;
+            color: #a51708;
+            padding-top: 15px;
+            font-size: 1.6rem;
+            padding-left: 10px;
+            border-bottom: 3px solid #a51708;
+            border-bottom-left-radius: 10px;
+        }
+
+        h4 {
+            padding-top: 5px;
+            font-size: 1.4rem;
+            padding-left: 10px;
+            font-weight: 500;
+        }
+
+        h5 {
+            font-size: 1rem;
+            padding-left: 10px;
+            font-weight: 400;
         }
     }
 }
