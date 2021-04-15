@@ -395,6 +395,56 @@ nav #nav-initial .circle-wrap h1 {
   color: #a51708;
 }
 
+#scs-page {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  color: #ddd;
+}
+#scs-page header {
+  background-image: url(/Portfolio/images/fire-banner.jpg);
+  background-position: center;
+  border-bottom: 3px solid #a51708;
+}
+#scs-page header h1 {
+  color: #ddd;
+  font-size: 3rem;
+  padding: 15px 0px;
+  text-shadow: 0 0 20px #111;
+}
+#scs-page main {
+  height: 100vh;
+}
+#scs-page .scs-content {
+  width: 100%;
+  padding: 0 20%;
+  text-align: left;
+}
+#scs-page .scs-intro {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+#scs-page .scs-intro h2 {
+  width: 40%;
+  font-weight: 500;
+}
+#scs-page .scs-intro p {
+  width: 60%;
+  padding-left: 30px;
+  border-left: 3px solid #a51708;
+}
+#scs-page .treehouse-netmatters {
+  display: flex;
+  justify-content: space-between;
+}
+#scs-page .treehouse,
+#scs-page .netmatters {
+  width: 48%;
+  padding: 0 4rem 2rem;
+  box-shadow: 0 0 20px #0f1012;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

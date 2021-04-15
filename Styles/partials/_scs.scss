@@ -1,0 +1,58 @@
+#scs-page {
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    color: #ddd;
+
+    header {
+        background-image: url(/Portfolio/images/fire-banner.jpg);
+        background-position: center;
+        border-bottom: 3px solid #a51708;
+
+        h1 {
+            color: #ddd;
+            font-size: 3rem;
+            padding: 15px 0px;
+            text-shadow: 0 0 20px #111;
+        }
+    }  
+
+    main {
+        height: 100vh;
+    }
+
+    .scs-content {
+        width: 100%;
+        padding: 0 20%;
+        text-align: left;
+    }
+
+    .scs-intro {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        margin-bottom: 50px;
+
+        h2 {
+            width: 40%;
+            font-weight: 500;
+        }
+
+        p {
+            width: 60%;
+            padding-left: 30px;
+            border-left: 3px solid #a51708;
+        }
+    }
+
+    .treehouse-netmatters {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .treehouse,
+    .netmatters {
+        width: 48%;
+        padding: 0 4rem 2rem;
+        box-shadow: 0 0 20px #0f1012;
+    }
+}
