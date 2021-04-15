@@ -306,13 +306,15 @@ nav #nav-initial .circle-wrap h1 {
   color: #ddd;
 }
 #about-me-page header {
-  background-color: #a51708;
-  box-shadow: 0 5px 15px #a51708;
+  background-image: url(/Portfolio/images/fire-banner.jpg);
+  background-position: center;
+  border-bottom: 3px solid #a51708;
 }
 #about-me-page header h1 {
-  color: #191a1c;
+  color: #ddd;
   font-size: 3rem;
   padding: 15px 0px;
+  text-shadow: 0 0 20px #111;
 }
 #about-me-page main {
   height: 100vh;
@@ -325,7 +327,7 @@ nav #nav-initial .circle-wrap h1 {
   margin-top: 80px;
 }
 #about-me-page .about-content .about-experience {
-  border-left: 2px solid #a51708;
+  border-left: 3px solid #a51708;
 }
 #about-me-page .about-content a {
   font-size: 1.3rem;
@@ -339,7 +341,7 @@ nav #nav-initial .circle-wrap h1 {
   font-size: 2.2rem;
   margin-top: 50px;
   color: #a51708;
-  border-bottom: 2px solid #a51708;
+  border-bottom: 3px solid #a51708;
   padding-left: 10px;
 }
 #about-me-page .about-content p {
@@ -366,6 +368,31 @@ nav #nav-initial .circle-wrap h1 {
   font-size: 1rem;
   padding-left: 10px;
   font-weight: 400;
+}
+
+#coding-examples-page {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  color: #ddd;
+}
+#coding-examples-page header {
+  background-image: url(/Portfolio/images/fire-banner.jpg);
+  background-position: center;
+  border-bottom: 3px solid #a51708;
+}
+#coding-examples-page header h1 {
+  color: #ddd;
+  font-size: 3rem;
+  padding: 15px 0px;
+  text-shadow: 0 0 20px #111;
+}
+#coding-examples-page main {
+  height: 100vh;
+}
+#coding-examples-page .coming-soon h2 {
+  font-size: 5rem;
+  margin-top: 300px;
+  color: #a51708;
 }
 
 * {

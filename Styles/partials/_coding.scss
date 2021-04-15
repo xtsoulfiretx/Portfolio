@@ -1,0 +1,31 @@
+#coding-examples-page {
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    color: #ddd;
+
+    header {
+        background-image: url(/Portfolio/images/fire-banner.jpg);
+        background-position: center;
+        border-bottom: 3px solid #a51708;
+
+        h1 {
+            color: #ddd;
+            font-size: 3rem;
+            padding: 15px 0px;
+            text-shadow: 0 0 20px #111;
+        }
+    }  
+
+    main {
+        height: 100vh;
+    }
+
+    .coming-soon {
+
+        h2 {
+            font-size: 5rem;
+            margin-top: 300px;
+            color: #a51708;
+        }
+    }
+}

@@ -4,13 +4,15 @@
     color: #ddd;
 
     header {
-        background-color: #a51708;
-        box-shadow: 0 5px 15px #a51708;
+        background-image: url(/Portfolio/images/fire-banner.jpg);
+        background-position: center;
+        border-bottom: 3px solid #a51708;
 
         h1 {
-            color: #191a1c;
+            color: #ddd;
             font-size: 3rem;
             padding: 15px 0px;
+            text-shadow: 0 0 20px #111;
         }
     }  
 
@@ -27,7 +29,7 @@
         }
 
         .about-experience {
-            border-left: 2px solid #a51708;
+            border-left: 3px solid #a51708;
         }
 
         a {
@@ -44,7 +46,7 @@
             font-size: 2.2rem;
             margin-top: 50px;
             color: #a51708;
-            border-bottom: 2px solid #a51708;
+            border-bottom: 3px solid #a51708;
             padding-left: 10px;
         }
 
