@@ -5,6 +5,10 @@ nav {
 }
 
 .wrapper main {
+    @media (max-width: 1024px) {
+        margin-top: 8em;
+    }
+
     @media (min-width: 1024px){
         margin-left: 13.5em;
     }
