@@ -3,6 +3,11 @@
     font-family:'Bree Serif', serif;
     color: #ddd;
 
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        background-color: #191a1c;
+        height: 100%;
+    }
+
     header {
         background-image: url(/Portfolio/images/fire-banner.jpg);
         background-position: center;
@@ -26,6 +31,14 @@
             font-size: 5rem;
             margin-top: 300px;
             color: #a51708;
+
+            @media (max-width: 1023px) {
+                font-size: 4rem;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 3rem;
+            }
         }
     }
 }

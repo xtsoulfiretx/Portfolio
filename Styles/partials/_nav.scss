@@ -111,6 +111,10 @@
         justify-content: space-around;
         list-style: none;
 
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            list-style: none;
+        }
+
         i {
             color: #a51708;
             font-size: 2.5rem;

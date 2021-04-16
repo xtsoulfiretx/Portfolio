@@ -149,10 +149,30 @@
   padding-right: 20px;
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  #contact-info {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 1200px) {
+  #contact-info {
+    font-size: 1.1rem;
+  }
+}
 #contact-info h2 {
   margin-bottom: 15px;
   color: #a51708;
   font-size: 1.7rem;
+}
+@media (max-width: 768px) {
+  #contact-info h2 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1200px) {
+  #contact-info h2 {
+    font-size: 1.3rem;
+  }
 }
 #contact-info a {
   color: #a51708;
@@ -170,6 +190,13 @@
     flex-basis: 0;
     border-bottom: 3px solid #a51708;
     margin-bottom: 20px;
+    border-top: 3px solid #a51708;
+    padding-top: 20px;
+  }
+}
+@media (-ms-high-contrast: none) and (max-width: 767px), (-ms-high-contrast: active) and (max-width: 767px) {
+  #contact-info {
+    flex-basis: auto;
   }
 }
 
@@ -340,6 +367,11 @@ nav .nav-initial .circle-wrap h1 {
   justify-content: space-around;
   list-style: none;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #nav-social {
+    list-style: none;
+  }
+}
 #nav-social i {
   color: #a51708;
   font-size: 2.5rem;
@@ -452,6 +484,11 @@ nav .nav-initial .circle-wrap h1 {
   font-family: "Bree Serif", serif;
   color: #ddd;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #about-me-page {
+    padding-bottom: 4rem;
+  }
+}
 #about-me-page header {
   background-image: url(/Portfolio/images/fire-banner.jpg);
   background-position: center;
@@ -520,6 +557,12 @@ nav .nav-initial .circle-wrap h1 {
   font-family: "Bree Serif", serif;
   color: #ddd;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #coding-examples-page {
+    background-color: #191a1c;
+    height: 100%;
+  }
+}
 #coding-examples-page header {
   background-image: url(/Portfolio/images/fire-banner.jpg);
   background-position: center;
@@ -539,11 +582,26 @@ nav .nav-initial .circle-wrap h1 {
   margin-top: 300px;
   color: #a51708;
 }
+@media (max-width: 1023px) {
+  #coding-examples-page .coming-soon h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  #coding-examples-page .coming-soon h2 {
+    font-size: 3rem;
+  }
+}
 
 #scs-page {
   text-align: center;
   font-family: "Bree Serif", serif;
   color: #ddd;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #scs-page {
+    padding-bottom: 4.5rem;
+  }
 }
 #scs-page header {
   background-image: url(/Portfolio/images/fire-banner.jpg);
@@ -563,6 +621,22 @@ nav .nav-initial .circle-wrap h1 {
   width: 100%;
   padding: 0 15%;
   text-align: left;
+  background-color: #191a1c;
+}
+@media (max-width: 767px) {
+  #scs-page .scs-content {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 1200px) {
+  #scs-page .scs-content {
+    padding: 0 8%;
+  }
+}
+@media (max-width: 1439px) {
+  #scs-page .scs-content {
+    padding: 0 10%;
+  }
 }
 #scs-page .scs-intro {
   display: flex;
@@ -583,33 +657,87 @@ nav .nav-initial .circle-wrap h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1023px) {
+  #scs-page .treehouse-netmatters {
+    flex-direction: column;
+  }
+}
 #scs-page .treehouse,
 #scs-page .netmatters {
   width: 48%;
-  padding: 0 4rem 2rem;
+  padding: 0 3rem 2rem;
   border-radius: 25px;
   box-shadow: 0 0 20px #df3502;
+  margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  #scs-page .treehouse,
+#scs-page .netmatters {
+    width: 100%;
+  }
+}
+@media (max-width: 1400px) {
+  #scs-page .treehouse,
+#scs-page .netmatters {
+    padding: 0 2rem 2rem;
+  }
 }
 #scs-page .treehouse p,
 #scs-page .netmatters p {
   margin-top: 20px;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 400;
+}
+@media (min-width: 768px) {
+  #scs-page .treehouse p,
+#scs-page .netmatters p {
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 1200px) {
+  #scs-page .treehouse p,
+#scs-page .netmatters p {
+    font-size: 1.1rem;
+  }
 }
 #scs-page .treehouse h3,
 #scs-page .netmatters h3 {
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: #5fcf80;
+}
+@media (min-width: 768px) {
+  #scs-page .treehouse h3,
+#scs-page .netmatters h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  #scs-page .treehouse h3,
+#scs-page .netmatters h3 {
+    font-size: 1.3rem;
+  }
 }
 #scs-page .treehouse a,
 #scs-page .netmatters a {
   color: #ddd;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  #scs-page .treehouse a,
+#scs-page .netmatters a {
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 1200px) {
+  #scs-page .treehouse a,
+#scs-page .netmatters a {
+    font-size: 1.1rem;
+  }
 }
 #scs-page .treehouse a:hover,
 #scs-page .netmatters a:hover {
@@ -619,7 +747,19 @@ nav .nav-initial .circle-wrap h1 {
 #scs-page .treehouse li,
 #scs-page .netmatters li {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  #scs-page .treehouse li,
+#scs-page .netmatters li {
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 1200px) {
+  #scs-page .treehouse li,
+#scs-page .netmatters li {
+    font-size: 1.1rem;
+  }
 }
 #scs-page .treehouse-netmatters-img {
   display: flex;
@@ -633,6 +773,11 @@ nav .nav-initial .circle-wrap h1 {
   max-width: 100%;
   max-height: 100%;
 }
+@media (-ms-high-contrast: none) and (min-width: 1023px) and (max-width: 1500px), (-ms-high-contrast: active) and (min-width: 1023px) and (max-width: 1500px) {
+  #scs-page .treehouse-netmatters-img img {
+    width: 250px;
+  }
+}
 
 @media (min-width: 1024px) {
   nav {
@@ -640,6 +785,11 @@ nav .nav-initial .circle-wrap h1 {
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .wrapper main {
+    height: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .wrapper main {
     margin-top: 8em;
@@ -647,6 +797,23 @@ nav .nav-initial .circle-wrap h1 {
 }
 @media (min-width: 1024px) {
   .wrapper main {
+    margin-left: 13.5em;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .wrapper {
+    overflow-x: hidden;
+    background-color: #191a1c;
+  }
+}
+@media (-ms-high-contrast: none) and (max-width: 1024px), (-ms-high-contrast: active) and (max-width: 1024px) {
+  .wrapper {
+    margin-top: 8em;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 1024px), (-ms-high-contrast: active) and (min-width: 1024px) {
+  .wrapper {
     margin-left: 13.5em;
   }
 }
@@ -667,6 +834,16 @@ nav .nav-initial .circle-wrap h1 {
   font-family: "Roboto", serif;
   font-size: 2rem;
   color: #ddd;
+}
+@media (max-width: 1024px) {
+  .wrapper main #scroll-up {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper main #scroll-up {
+    font-size: 1.2rem;
+  }
 }
 .wrapper main #scroll-up a {
   font-size: 1.5rem;

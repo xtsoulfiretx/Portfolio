@@ -3,6 +3,10 @@
     font-family:'Bree Serif', serif;
     color: #ddd;
 
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        padding-bottom: 4rem;
+    }
+
     header {
         background-image: url(/Portfolio/images/fire-banner.jpg);
         background-position: center;

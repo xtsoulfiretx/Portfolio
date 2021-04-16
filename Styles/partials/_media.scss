@@ -5,6 +5,11 @@ nav {
 }
 
 .wrapper main {
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 100%;
+    }
+
     @media (max-width: 1024px) {
         margin-top: 8em;
     }
@@ -12,5 +17,20 @@ nav {
     @media (min-width: 1024px){
         margin-left: 13.5em;
     }
+}
+
+.wrapper {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        overflow-x: hidden;
+        background-color: #191a1c;
+    
+        @media (max-width: 1024px) {
+            margin-top: 8em;
+        }
+
+        @media (min-width: 1024px){
+            margin-left: 13.5em;
+        }
+      }
 }
 
