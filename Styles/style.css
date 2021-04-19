@@ -844,6 +844,10 @@ nav .nav-initial .circle-wrap h1 {
   font-family: "Roboto", serif;
   font-size: 2rem;
   color: #ddd;
+  text-decoration: none;
+}
+.wrapper main #scroll-up:hover {
+  text-decoration: underline;
 }
 @media (max-width: 1024px) {
   .wrapper main #scroll-up {
@@ -857,9 +861,6 @@ nav .nav-initial .circle-wrap h1 {
 }
 .wrapper main #scroll-up a {
   font-size: 1.5rem;
-}
-.wrapper main #scroll-up a:hover {
-  text-decoration: underline;
 }
 .wrapper main #scroll-up i {
   color: #ddd;
