@@ -73,7 +73,6 @@
 }
 #projects-content span {
   color: #ddd;
-  margin-top: 1rem;
 }
 #projects-content i {
   color: #ddd;
@@ -102,9 +101,11 @@
 }
 #projects-content .project:hover span {
   color: #a51708;
+  text-decoration: underline;
 }
 #projects-content .project:hover i {
   color: #a51708;
+  text-decoration: underline;
 }
 #projects-content .project:hover .project-img {
   box-shadow: 0 0 20px #df3502;
@@ -124,9 +125,10 @@
   }
 }
 #projects-content .project-img img {
+  height: 100%;
   width: 100%;
   position: relative;
-  object-fit: contain;
+  object-fit: cover;
   vertical-align: middle;
   transform-origin: top;
   transition: all 0.5s;
@@ -489,7 +491,7 @@ nav .nav-initial .circle-wrap h1 {
   }
 }
 #about-me-page header {
-  background-image: url(/Portfolio/images/fire-banner.jpg);
+  background-image: url(../images/fire-banner.jpg);
   background-position: center;
   border-bottom: 3px solid #a51708;
 }
@@ -567,7 +569,7 @@ nav .nav-initial .circle-wrap h1 {
   }
 }
 #coding-examples-page header {
-  background-image: url(/Portfolio/images/fire-banner.jpg);
+  background-image: url(../images/fire-banner.jpg);
   background-position: center;
   border-bottom: 3px solid #a51708;
 }
@@ -607,7 +609,7 @@ nav .nav-initial .circle-wrap h1 {
   }
 }
 #scs-page header {
-  background-image: url(/Portfolio/images/fire-banner.jpg);
+  background-image: url(../images/fire-banner.jpg);
   background-position: center;
   border-bottom: 3px solid #a51708;
 }

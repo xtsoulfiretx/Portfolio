@@ -23,7 +23,6 @@
 
         span {
             color: #ddd;
-            margin-top: 1rem;
         }
 
         i {
@@ -53,9 +52,11 @@
                 }
                 span {
                     color: #a51708;
+                    text-decoration: underline;
                 }
                 i {
                     color: #a51708;
+                    text-decoration: underline;
                 }
                 .project-img {
                     box-shadow: 0 0 20px #df3502;
@@ -76,9 +77,10 @@
                 }
 
                 img {
+                    height: 100%;
                     width: 100%;
                     position: relative;
-                    object-fit: contain;
+                    object-fit: cover;
                     vertical-align: middle;
                     transform-origin: top;
                     transition: all .5s;
