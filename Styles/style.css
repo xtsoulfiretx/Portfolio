@@ -778,6 +778,11 @@ nav .nav-initial .circle-wrap h1 {
     width: 250px;
   }
 }
+@media (-ms-high-contrast: none) and (min-width: 320px), (-ms-high-contrast: none) and (max-width: 425px), (-ms-high-contrast: active) and (min-width: 320px), (-ms-high-contrast: active) and (max-width: 425px) {
+  #scs-page .treehouse-netmatters-img img {
+    width: 280px;
+  }
+}
 
 @media (min-width: 1024px) {
   nav {
