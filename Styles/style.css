@@ -99,7 +99,6 @@
 }
 #projects-content .project:hover h2 {
   color: #a51708;
-  text-shadow: 0 0 20px #df3502;
 }
 #projects-content .project:hover span {
   color: #a51708;
@@ -550,6 +549,10 @@ nav .nav-initial .circle-wrap h1 {
   font-size: 1rem;
   padding-left: 10px;
   font-weight: 400;
+}
+
+.wrapper main {
+  padding-bottom: 4.5rem;
 }
 
 #coding-examples-page {
