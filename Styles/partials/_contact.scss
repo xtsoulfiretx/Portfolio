@@ -70,12 +70,14 @@
             border: 3px solid #a51708;
             border-radius: 0 15px 0 15px;
             transition: .5s;
+            cursor: pointer;
 
             &:hover {
                 color: #191a1c;
                 background: #a51708;
                 border-color: #191a1c;
                 box-shadow: 0 0 15px #df3502;
+                cursor: pointer;
             }
         }
     }
@@ -125,7 +127,9 @@
         }
     }
 
+
     #message {
         height: 200px;
         overflow: auto;
+        position: relative;
     }
