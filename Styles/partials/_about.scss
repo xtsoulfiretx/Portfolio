@@ -26,7 +26,16 @@
         padding-bottom: 90px;
 
         .about-personal {
-            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 1023px) {
+                flex-direction: column;
+
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                    display: block;
+                }
+            }
         }
 
         .about-experience {
@@ -45,25 +54,21 @@
 
         h2 {
             font-size: 2.2rem;
-            margin-top: 50px;
+            margin-top: 10px;
             color: #a51708;
             border-bottom: 3px solid #a51708;
             padding-left: 10px;
+        }
+
+        .start {
+            margin-top: 80px;
         }
 
         p {
             font-size: 1.2rem;
             margin-top: 15px;
             padding-left: 10px;
-            width: 50%;
-
-            @media (max-width: 767px){
-                width: 100%;
-            }
-
-            @media (max-width: 1023px) {
-                width: 75%;
-            }
+            width: 90%;
                 
         }
 
@@ -88,6 +93,32 @@
             font-size: 1rem;
             padding-left: 10px;
             font-weight: 400;
+        }
+
+        .personal-text {
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .image-container {
+        margin-top: 20px;
+        max-width: 50%;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            max-width: none;
+        }
+
+        @media (max-width: 1023px) {
+            max-width: 100%;
+        }
+        img {
+            width: 100%;
+            border-radius: 20px;
+
+            @media (min-width: 1420px) {
+                width: 350px;
+            }
         }
     }
 }

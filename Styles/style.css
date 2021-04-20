@@ -548,7 +548,18 @@ nav .nav-initial .circle-wrap h1 {
   padding-bottom: 90px;
 }
 #about-me-page .about-content .about-personal {
-  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1023px) {
+  #about-me-page .about-content .about-personal {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1023px) and (-ms-high-contrast: none), (max-width: 1023px) and (-ms-high-contrast: active) {
+  #about-me-page .about-content .about-personal {
+    display: block;
+  }
 }
 #about-me-page .about-content .about-experience {
   border-left: 3px solid #a51708;
@@ -563,26 +574,19 @@ nav .nav-initial .circle-wrap h1 {
 }
 #about-me-page .about-content h2 {
   font-size: 2.2rem;
-  margin-top: 50px;
+  margin-top: 10px;
   color: #a51708;
   border-bottom: 3px solid #a51708;
   padding-left: 10px;
+}
+#about-me-page .about-content .start {
+  margin-top: 80px;
 }
 #about-me-page .about-content p {
   font-size: 1.2rem;
   margin-top: 15px;
   padding-left: 10px;
-  width: 50%;
-}
-@media (max-width: 767px) {
-  #about-me-page .about-content p {
-    width: 100%;
-  }
-}
-@media (max-width: 1023px) {
-  #about-me-page .about-content p {
-    width: 75%;
-  }
+  width: 90%;
 }
 #about-me-page .about-content h3 {
   display: inline-block;
@@ -603,6 +607,33 @@ nav .nav-initial .circle-wrap h1 {
   font-size: 1rem;
   padding-left: 10px;
   font-weight: 400;
+}
+#about-me-page .about-content .personal-text {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#about-me-page .image-container {
+  margin-top: 20px;
+  max-width: 50%;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #about-me-page .image-container {
+    max-width: none;
+  }
+}
+@media (max-width: 1023px) {
+  #about-me-page .image-container {
+    max-width: 100%;
+  }
+}
+#about-me-page .image-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+@media (min-width: 1420px) {
+  #about-me-page .image-container img {
+    width: 350px;
+  }
 }
 
 .wrapper main {
