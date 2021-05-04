@@ -436,6 +436,10 @@ nav .nav-initial .circle-wrap h1 {
   top: 0;
   left: 0;
   font-family: "Bree Serif", serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191a1c;
+  border-bottom: 3px solid #a51708;
 }
 @media (max-width: 1024px) {
   #mobile-nav {
@@ -444,10 +448,6 @@ nav .nav-initial .circle-wrap h1 {
 }
 #mobile-nav .nav-initial {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  background-color: #191a1c;
-  border-bottom: 3px solid #a51708;
   padding-left: 40px;
 }
 #mobile-nav .nav-initial .circle-wrap {
@@ -469,59 +469,17 @@ nav .nav-initial .circle-wrap h1 {
   top: 17px;
   left: 17px;
 }
+#mobile-nav .mobile-nav-wrapper a {
+  width: auto;
+}
 
 .mobile-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
   order: 1;
   overflow-x: auto;
   width: 100%;
-  height: 100%;
   border-right: 3px solid #a51708;
-}
-
-.burger {
-  border-style: none;
-  background: none;
-  cursor: pointer;
-  position: absolute;
-  width: 45px;
-  top: 45;
-  right: 40;
-  display: flex;
-  flex-direction: column;
-  margin-right: 1em;
-}
-.burger span {
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #a51708;
-  margin: 0.3rem 0;
-}
-
-.cross-btn {
-  border-style: none;
-  background: none;
-  cursor: pointer;
-  position: absolute;
-  width: 45px;
-  top: 45;
-  right: 40;
-  display: none;
-  flex-direction: column;
-  margin-right: 1em;
-}
-.cross-btn span {
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #a51708;
-  margin: 0.3rem 0;
-}
-.cross-btn span:first-child {
-  transform: rotate -45deg;
-}
-.cross-btn span:last-child {
-  transform: rotate 45deg;
 }
 
 #about-me-page {
