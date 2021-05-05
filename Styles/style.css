@@ -1,5 +1,6 @@
 #header-home {
   background: url(../images/fire-banner.jpg) no-repeat center;
+  background-size: cover;
   box-shadow: 0 5px 30px #000;
 }
 #header-home #banner {
@@ -504,7 +505,6 @@ nav .nav-initial .circle-wrap h1 {
 }
 .links-container .mobile-nav-links li {
   padding: 10px 0;
-  width: 100%;
   transition: 0.5s;
 }
 .links-container .mobile-nav-links li:hover {
@@ -514,7 +514,6 @@ nav .nav-initial .circle-wrap h1 {
   color: #a51708;
   font-size: 1.2rem;
   text-decoration: none;
-  width: 100%;
 }
 
 #about-me-page {

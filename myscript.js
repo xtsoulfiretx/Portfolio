@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     
     function createTypewriter(text,id){
         var i = 0;
-        var speed = 100;
+        var speed = 90;
         
         function typeWriter(text,id) {
             if (i < text.length) {
