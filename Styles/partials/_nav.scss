@@ -179,7 +179,7 @@
     #mobile-nav {
         display: none;
         width: 100vw;
-        height: 10em;
+        height: 8em;
         z-index: 1;
         position: fixed;
         top: 0;
@@ -189,6 +189,7 @@
         align-items: center;
         background-color: #191a1c;
         border-bottom: 3px solid #a51708;
+        flex-flow: row wrap;
 
         @media (max-width: 1024px) {
             display: flex;
@@ -204,8 +205,8 @@
                 color: #a51708;
                 border: 5px solid #a51708;
                 border-radius: 50px;
-                width: 100px;
-                height: 100px;
+                width: 75px;
+                height: 75px;
                 transition: .5s;
 
                 &:hover {
@@ -214,9 +215,9 @@
 
                 h1 {
                     position: absolute;
-                    font-size: 40px;
-                    top: 17px;
-                    left: 17px;
+                    font-size: 30px;
+                    top: 10px;
+                    left: 10px;
                 }
             }
         }
@@ -229,11 +230,49 @@
     .mobile-nav-wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         order: 1;
         overflow-x: auto;
         width: 100%;
         border-right: 3px solid #a51708;
+        position:relative;
     }
+
+    .links-container {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        background-color: #191a1c;
+
+        .mobile-nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 3px solid #a51708;
+
+            li {
+                padding: 10px 0;
+                width: 100%;
+                transition: .5s;
+                &:hover {
+                    text-shadow: 0 0 15px #df3502;
+                }
+            }
+
+            a {
+                color: #a51708;
+                font-size: 1.2rem;
+                text-decoration: none;
+                width: 100%;
+            }
+        }
+    }
+
 
     
 
