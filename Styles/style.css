@@ -718,12 +718,16 @@ body {
   overflow-y: auto;
 }
 #coding-examples-page .snippet-code pre {
-  display: flex;
-  justify-content: left;
   width: min-content;
   max-width: 100%;
   margin: auto;
   padding-right: 2rem;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #coding-examples-page .snippet-code pre {
+    text-align: left;
+    padding-left: 10px;
+  }
 }
 #coding-examples-page .snippet-code pre .code-example {
   max-width: 100%;

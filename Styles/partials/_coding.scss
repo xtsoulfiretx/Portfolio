@@ -89,12 +89,15 @@ body {
            overflow-y: auto;
 
             pre {
-                display: flex;
-                justify-content: left;
                 width: min-content;
                 max-width: 100%;
                 margin: auto;
                 padding-right: 2rem;
+
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                    text-align: left;
+                    padding-left: 10px;
+                }
 
             .code-example {
                 max-width: 100%;
