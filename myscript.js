@@ -17,6 +17,7 @@ window.addEventListener('load', function() {
         typeWriter(text,id);
     }
     $(".links-container").slideUp(0000);
+    $(".explanation-text").slideUp(0000);
     createTypewriter("My Name is Alexi Lambrou", "greetings");
     setTimeout(function (){createTypewriter("I'm a Web Developer!", "banner-tagline")},3000);
   });
@@ -26,4 +27,11 @@ window.addEventListener('load', function() {
   $(".hamburger").click(function(){
       $(".hamburger").toggleClass("is-active");
       $(".links-container").slideToggle();
+  });
+
+  // Code explanation reveal //
+
+  $(".show-code").click(function(){
+    $(".show-code").toggleClass("code-shown");
+    $(".explanation-text").slideToggle();
   });

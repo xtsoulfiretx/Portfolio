@@ -1,6 +1,5 @@
 body {
     background-color: #191a1c;
-    height: 100%;
 }
 
 #coding-examples-page {
@@ -25,10 +24,6 @@ body {
             text-shadow: 0 0 20px #111;
         }
     }  
-
-    main {
-        height: 100vh;
-    }
 
     h2 {
         color: #a51708;
@@ -56,13 +51,24 @@ body {
        .show-code {
            border-top: 3px solid #a51708;
            border-bottom: 3px solid #a51708;
-           background-color: #a51708;
+           background-color: #191a1c;
            padding: 10px;
+           margin-bottom: 20px;
+           cursor: pointer;
+           color:#a51708;
+           transition: .5s;
+
+           &:hover {
+            background-color: #a51708;
+            color: #191a1c;
+           }
+
         h3 {
             font-weight: 400;
             font-size: 1.5rem;
         }
         }
+
        .explanation-text {
            font-size: 1.2rem;
            margin: 10px 20px;
@@ -74,14 +80,13 @@ body {
    }
 
    .snippet-code {
-           display: flex;
-           flex-direction: column;
            margin: 20px 10px;
            background-color: #111111;
            border: 3px solid #474747;
            border-radius: 5px;
            font-size: 1em;
-           height: 40%;
+           height: 400px;
+           overflow-y: auto;
 
             pre {
                 display: flex;
@@ -90,7 +95,6 @@ body {
                 max-width: 100%;
                 margin: auto;
                 padding-right: 2rem;
-                overflow-x: auto;
 
             .code-example {
                 max-width: 100%;
@@ -98,5 +102,29 @@ body {
                 font-size: 1.2rem;
             }
         }
+    }
+
+    .see-me-button {
+        font-family: 'Roboto', serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        background-color: #191a1c;
+        color:#a51708;
+        padding: 10px 15px;
+        border: 3px solid #a51708;
+        border-radius: 0 15px 0 15px;
+        transition: .5s;
+        cursor: pointer;
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+            &:hover {
+                color: #191a1c;
+                background: #a51708;
+                border-color: #191a1c;
+                box-shadow: 0 0 15px #df3502;
+                cursor: pointer;
+            }
     }
 }
