@@ -431,7 +431,7 @@ nav .nav-initial .circle-wrap h1 {
 #mobile-nav {
   display: none;
   width: 100vw;
-  height: 8em;
+  height: 9em;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -443,7 +443,7 @@ nav .nav-initial .circle-wrap h1 {
   border-bottom: 3px solid #a51708;
   flex-flow: row wrap;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   #mobile-nav {
     display: flex;
   }
@@ -454,12 +454,12 @@ nav .nav-initial .circle-wrap h1 {
 }
 #mobile-nav .nav-initial .circle-wrap {
   position: relative;
-  margin: 15px 0;
+  margin: 15px 5px;
   color: #a51708;
   border: 5px solid #a51708;
   border-radius: 50px;
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   transition: 0.5s;
 }
 #mobile-nav .nav-initial .circle-wrap:hover {
@@ -467,9 +467,9 @@ nav .nav-initial .circle-wrap h1 {
 }
 #mobile-nav .nav-initial .circle-wrap h1 {
   position: absolute;
-  font-size: 30px;
-  top: 10px;
-  left: 10px;
+  font-size: 2.5rem;
+  top: 15px;
+  left: 15px;
 }
 #mobile-nav .mobile-nav-wrapper a {
   width: auto;
@@ -512,8 +512,13 @@ nav .nav-initial .circle-wrap h1 {
 }
 .links-container .mobile-nav-links a {
   color: #a51708;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-decoration: none;
+}
+@media (max-width: 426px) {
+  .links-container .mobile-nav-links a {
+    font-size: 2rem;
+  }
 }
 
 #about-me-page {
@@ -975,14 +980,14 @@ body {
     height: 100%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .wrapper main {
-    margin-top: 8em;
+    margin-top: 9rem;
   }
 }
 @media (min-width: 1024px) {
   .wrapper main {
-    margin-left: 13.5em;
+    margin-left: 13.5rem;
   }
 }
 
@@ -1038,8 +1043,8 @@ body {
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 50px;
+  height: 36px;
   display: inline-block;
   position: relative;
 }
@@ -1047,11 +1052,11 @@ body {
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 50px;
+  height: 8px;
   background-color: #a51708;
   border-radius: 4px;
   position: absolute;
@@ -1064,10 +1069,10 @@ body {
   display: block;
 }
 .hamburger-inner::before {
-  top: -10px;
+  top: -14px;
 }
 .hamburger-inner::after {
-  bottom: -10px;
+  bottom: -14px;
 }
 
 /*
@@ -1081,14 +1086,14 @@ body {
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--collapse .hamburger-inner::after {
-  top: -20px;
+  top: -28px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
 .hamburger--collapse .hamburger-inner::before {
   transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--collapse.is-active .hamburger-inner {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -14px, 0) rotate(-45deg);
   transition-delay: 0.22s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -1114,14 +1119,14 @@ body {
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--collapse-r .hamburger-inner::after {
-  top: -20px;
+  top: -28px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
 .hamburger--collapse-r .hamburger-inner::before {
   transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--collapse-r.is-active .hamburger-inner {
-  transform: translate3d(0, -10px, 0) rotate(45deg);
+  transform: translate3d(0, -14px, 0) rotate(45deg);
   transition-delay: 0.22s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -1164,8 +1169,8 @@ body {
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 50px;
+  height: 36px;
   display: inline-block;
   position: relative;
 }
@@ -1173,11 +1178,11 @@ body {
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 50px;
+  height: 8px;
   background-color: #a51708;
   border-radius: 4px;
   position: absolute;
@@ -1190,10 +1195,10 @@ body {
   display: block;
 }
 .hamburger-inner::before {
-  top: -10px;
+  top: -14px;
 }
 .hamburger-inner::after {
-  bottom: -10px;
+  bottom: -14px;
 }
 
 * {

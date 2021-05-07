@@ -179,7 +179,7 @@
     #mobile-nav {
         display: none;
         width: 100vw;
-        height: 8em;
+        height: 9em;
         z-index: 1;
         position: fixed;
         top: 0;
@@ -191,7 +191,7 @@
         border-bottom: 3px solid #a51708;
         flex-flow: row wrap;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             display: flex;
         }
 
@@ -201,12 +201,12 @@
 
             .circle-wrap {
                 position: relative;
-                margin: 15px 0;
+                margin: 15px 5px;
                 color: #a51708;
                 border: 5px solid #a51708;
                 border-radius: 50px;
-                width: 75px;
-                height: 75px;
+                width: 100px;
+                height: 100px;
                 transition: .5s;
 
                 &:hover {
@@ -215,9 +215,9 @@
 
                 h1 {
                     position: absolute;
-                    font-size: 30px;
-                    top: 10px;
-                    left: 10px;
+                    font-size: 2.5rem;
+                    top: 15px;
+                    left: 15px;
                 }
             }
         }
@@ -265,8 +265,12 @@
 
             a {
                 color: #a51708;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 text-decoration: none;
+
+                @media (max-width: 426px) {
+                    font-size: 2rem;
+                }
             }
         }
     }

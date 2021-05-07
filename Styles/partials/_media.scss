@@ -5,17 +5,16 @@ nav {
 }
 
 .wrapper main {
-
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 100%;
     }
 
-    @media (max-width: 1024px) {
-        margin-top: 8em;
+    @media (max-width: 1023px) {
+        margin-top: 9rem;
     }
 
     @media (min-width: 1024px){
-        margin-left: 13.5em;
+        margin-left: 13.5rem;
     }
 }
 
