@@ -16,6 +16,11 @@
   color: #ddd;
   text-shadow: 5px 5px 5px #111;
 }
+@media (max-width: 767px) {
+  #header-home h1 {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 682px) {
   #header-home h1 {
     font-size: 3.5rem;
@@ -32,6 +37,11 @@
   font-size: 1.5rem;
   text-shadow: 2px 2px 5px #111;
   margin-top: 1.5rem;
+}
+@media (max-width: 767px) {
+  #header-home span {
+    font-size: 1rem;
+  }
 }
 #header-home a {
   color: #ddd;
