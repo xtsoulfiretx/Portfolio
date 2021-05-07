@@ -20,12 +20,13 @@
             font-size: 2.5rem;
             color: #ddd;
             text-shadow: 5px 5px 5px #111;
+            text-align: center;
 
             @media (max-width: 426px) {
                font-size: 1.5rem;
             }
 
-            @media (min-width: 682px) {
+            @media (min-width: 769px) {
                 font-size: 3.5rem;
             }
 

@@ -81,7 +81,8 @@
                     width: 100%;
                     position: relative;
                     object-fit: cover;
-                    vertical-align: middle;
+                    object-position: center top;
+                    vertical-align: top;
                     transform-origin: top;
                     transition: all .5s;
 
