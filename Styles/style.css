@@ -8,7 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 81vh;
+}
+@media (min-width: 1024px) {
+  #header-home #banner {
+    height: 93vh;
+  }
 }
 #header-home h1 {
   font-family: "Bree Serif", serif;
@@ -16,7 +21,7 @@
   color: #ddd;
   text-shadow: 5px 5px 5px #111;
 }
-@media (max-width: 767px) {
+@media (max-width: 426px) {
   #header-home h1 {
     font-size: 1.5rem;
   }
