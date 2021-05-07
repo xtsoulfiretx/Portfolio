@@ -733,6 +733,7 @@ body {
   max-width: 100%;
   margin: auto;
   padding-right: 2rem;
+  text-align: initial !important;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #coding-examples-page .snippet-code pre {
@@ -744,6 +745,11 @@ body {
   max-width: 100%;
   text-align: initial !important;
   font-size: 1.2rem;
+}
+@media (max-width: 1023px) {
+  #coding-examples-page .snippet-code pre .code-example {
+    font-size: 1rem;
+  }
 }
 #coding-examples-page .see-me-button {
   font-family: "Roboto", serif;
@@ -819,15 +825,36 @@ body {
   padding-top: 80px;
   margin-bottom: 100px;
 }
+@media (max-width: 767px) {
+  #scs-page .scs-intro {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+}
 #scs-page .scs-intro h2 {
   width: 40%;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  #scs-page .scs-intro h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #a51708;
+    padding-bottom: 10px;
+  }
 }
 #scs-page .scs-intro p {
   font-size: 1.1rem;
   width: 60%;
   padding-left: 30px;
   border-left: 3px solid #a51708;
+}
+@media (max-width: 767px) {
+  #scs-page .scs-intro p {
+    width: 100%;
+    border-left: none;
+    padding-left: 0;
+  }
 }
 @media (min-width: 768px) {
   #scs-page .scs-intro p {

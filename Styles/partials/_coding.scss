@@ -97,6 +97,7 @@ body {
                 max-width: 100%;
                 margin: auto;
                 padding-right: 2rem;
+                text-align: initial!important;
 
                 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                     text-align: left;
@@ -107,6 +108,10 @@ body {
                 max-width: 100%;
                 text-align: initial!important;
                 font-size: 1.2rem;
+
+                @media (max-width: 1023px) {
+                    font-size: 1rem;
+                }
             }
         }
     }
