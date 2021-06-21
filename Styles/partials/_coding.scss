@@ -1,5 +1,5 @@
 body {
-    background-color: #191a1c;
+    background-color: $black;
 }
 
 #coding-examples-page {
@@ -8,14 +8,14 @@ body {
     color: #ddd;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        background-color: #191a1c;
+        background-color: $black;
         height: 100%;
     }
 
     header {
         background-image: url(../images/fire-banner.jpg);
         background-position: center;
-        border-bottom: 3px solid #a51708;
+        border-bottom: 3px solid $red;
 
         h1 {
             color: #ddd;
@@ -25,16 +25,12 @@ body {
         }
     }  
 
-    h2 {
-        color: #a51708;
-        text-decoration: underline;
-    }
    .snippets-container {
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
        width: 90%;
-       border: 5px solid #a51708;
+       border: 5px solid $red;
        border-radius: 20px;
        margin: 30px auto;
 
@@ -42,7 +38,7 @@ body {
            display: flex;
            flex-direction: column;
            margin: 20px 20px;
-           border: 3px solid #a51708;
+           border: 3px solid $red;
            border-radius: 5px;
            font-size: 1rem;
            width: 50%;
@@ -52,19 +48,27 @@ body {
         }
        }
 
+       h2 {
+        padding-top: 10px;
+        color: $red;
+        font-weight: 400;
+    }
+
        .show-code {
-           border-top: 3px solid #a51708;
-           border-bottom: 3px solid #a51708;
-           background-color: #191a1c;
+           border-top: 3px solid $red;
+           border-bottom: 3px solid $red;
+           background-color: $black;
            padding: 10px;
            margin-bottom: 20px;
            cursor: pointer;
-           color:#a51708;
+           color:$link2;
            transition: .5s;
 
            &:hover {
-            background-color: #a51708;
-            color: #191a1c;
+            background-color: $link2;
+            color: $black;
+            border-top: 3px solid $link2;
+            border-bottom: 3px solid $link2;
            }
 
         h3 {
@@ -120,22 +124,22 @@ body {
         font-family: 'Roboto', serif;
         font-weight: 600;
         font-size: 1.25rem;
-        background-color: #191a1c;
-        color:#a51708;
+        background-color: $black;
+        color:$link2;
         padding: 10px 15px;
-        border: 3px solid #a51708;
-        border-radius: 0 15px 0 15px;
+        border: 3px solid $link2;
         transition: .5s;
         cursor: pointer;
         width: 200px;
         margin: 0 auto;
         margin-bottom: 20px;
+        text-decoration: none;
 
             &:hover {
-                color: #191a1c;
-                background: #a51708;
-                border-color: #191a1c;
-                box-shadow: 0 0 15px #df3502;
+                color: $black;
+                background: $link2;
+                border-color: $black;
+                box-shadow: 0 0 15px $secondary;
                 cursor: pointer;
             }
     }

@@ -8,25 +8,30 @@
         max-width: 90%;
         margin: auto;
         font-family: 'Roboto', serif;
+        
 
         a {
             display: flex;
             text-decoration: none;
+            transition: .5s;
         }
 
         h2 {
-            color: #ddd;
+            color: $link2;
             text-decoration: none;
             margin-top: 1rem;
             margin-bottom: 5px;
+            transition: .5s;
         }
 
         span {
-            color: #ddd;
+            transition: .5s;
+            color: $link2;
         }
 
         i {
-            color: #ddd;
+            transition: .5s;
+            color: $link2;
         }
 
         .project {
@@ -46,20 +51,38 @@
                 width: calc(33.3% - 12px);
             }
 
+            .hidden-box {
+                display: flex;
+                border: 3px solid $link2;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                padding-top: 10px;
+
+                p {
+                    color: #fff;
+                }
+
+                @media (min-width: 1500px) {
+                    width:  370px;
+                }
+            }
+
             &:hover {
                 h2 {
-                        color: #a51708;
+                        color: $link;
                 }
                 span {
-                    color: #a51708;
+                    color: $link;
                     text-decoration: underline;
                 }
                 i {
-                    color: #a51708;
+                    color: $link;
                     text-decoration: underline;
                 }
                 .project-img {
-                    box-shadow: 0 0 20px #df3502;
+                    box-shadow: 0 0 20px $secondary;
                 }
             }
         }
@@ -87,7 +110,7 @@
                     transition: all .5s;
 
                     &:hover {
-                        opacity: .5;
+                        opacity: .75;
                         transform: scale(1.05);
                     }
 

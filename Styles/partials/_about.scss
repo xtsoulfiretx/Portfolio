@@ -10,7 +10,7 @@
     header {
         background-image: url(../images/fire-banner.jpg);
         background-position: center;
-        border-bottom: 3px solid #a51708;
+        border-bottom: 3px solid $red;
 
         h1 {
             color: #ddd;
@@ -39,24 +39,26 @@
         }
 
         .about-experience {
-            border-left: 3px solid #a51708;
+            border-left: 3px solid $red;
         }
 
         a {
             font-size: 1.3rem;
-            color: #a51708;
+            color: $link2;
             text-decoration: none;
 
             &:hover {
                 text-decoration: underline;
+                text-shadow: 0 0 20px $secondary;
+                transition: .5s;
             }
         }
 
         h2 {
             font-size: 2.2rem;
             margin-top: 10px;
-            color: #a51708;
-            border-bottom: 3px solid #a51708;
+            color: $red;
+            border-bottom: 3px solid $red;
             padding-left: 10px;
         }
 
@@ -74,11 +76,11 @@
 
         h3 {
             display: inline-block;
-            color: #a51708;
+            color: $red;
             padding-top: 15px;
             font-size: 1.6rem;
             padding-left: 10px;
-            border-bottom: 3px solid #a51708;
+            border-bottom: 3px solid $red;
             border-bottom-left-radius: 10px;
         }
 

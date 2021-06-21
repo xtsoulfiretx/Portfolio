@@ -5,6 +5,8 @@
         flex-basis: 500px;
         padding-right: 20px;
         font-size: 1.5rem;
+        padding-left: 20px;
+        justify-content: space-evenly;
 
         @media (max-width: 768px) {
             font-size: .95rem;
@@ -16,8 +18,10 @@
 
         h2 {
             margin-bottom: 15px;
-            color: #a51708;
+            color: $red;
             font-size: 1.7rem;
+            padding-bottom: 2px;
+            border-bottom: 3px solid $red;
 
             @media (max-width: 768px) {
                 font-size: 1.1rem;
@@ -29,12 +33,22 @@
         }
 
         a {
-            color: #a51708;
+            color: $link2;
             text-decoration: none;
 
+            h3 {
+                color: $link2;
+                transition: .5s;
+                font-size: 1.5rem;
+                padding-bottom: 10px;
+
+                &:hover {
+                    color: $link;
+                }
+            }
+
             &:hover {
-                text-decoration: underline;
-                text-shadow: 0 0 20px #df3502;
+                text-shadow: 0 0 20px $secondary;
             }
         }
 
@@ -44,9 +58,8 @@
 
         @media (max-width: 767px) {
             flex-basis: 0;
-            border-bottom: 3px solid #a51708;
+            border-bottom: 3px solid $red;
             margin-bottom: 20px;
-            border-top: 3px solid #a51708;
             padding-top: 20px;
         }
 
@@ -58,34 +71,41 @@
     }
 
     #contact-form {
-        width: 100%;
+        width: 58%;
 
         button {
             font-family: 'Roboto', serif;
             font-weight: 600;
             font-size: 1.25rem;
-            background-color: #191a1c;
-            color:#a51708;
+            background-color: $black;
+            color:$link2;
             padding: 10px 15px;
-            border: 3px solid #a51708;
-            border-radius: 0 15px 0 15px;
+            border: 3px solid $link2;
             transition: .5s;
             cursor: pointer;
 
             &:hover {
-                color: #191a1c;
-                background: #a51708;
-                border-color: #191a1c;
-                box-shadow: 0 0 15px #df3502;
+                color: $black;
+                background: $link2;
+                border-color: $black;
+                box-shadow: 0 0 15px $secondary;
                 cursor: pointer;
             }
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
         }
     }
 
     #contact-content {
         display: flex;
         flex-direction: column;
-        padding: 0 4rem 4rem;
+        max-width: 100%;
+        margin: auto;
+        border-top: 3px solid $red;
+        padding: 2rem 4rem 4rem;
 
         @media (max-width: 767px) {
            padding: 0 2rem 2rem;
@@ -115,15 +135,15 @@
         border: 2px solid #c8c8c8;
         border-radius: 5px;
         background-color: #e6e6e6;
-        padding: 1px 2px;
+        padding: 1px 5px;
         margin-bottom: 1em;
         width: 100%;
         height: 50px;
         font-size: 1rem;
 
         &:focus {
-            box-shadow: 0 0 15px #df3502;
-            outline: #a51708 1px;
+            box-shadow: 0 0 15px $secondary;
+            outline: $red 1px;
         }
     }
 
@@ -134,5 +154,5 @@
         position: relative;
         font-family: 'Roboto', serif;
         font-size: 1rem;
-        padding: 2px 3px;
+        padding: 5px 5px;
     }

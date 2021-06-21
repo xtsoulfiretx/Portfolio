@@ -9,13 +9,15 @@ window.addEventListener('load', function() {
         
         function typeWriter(text,id) {
             if (i < text.length) {
-                document.getElementById(id).innerHTML += text.charAt(i);
+                document.getElementById(id).textContent += text.charAt(i);
                 i++;
                 setTimeout(function() {typeWriter(text,id)}, speed);
             }
         }
         typeWriter(text,id);
     }
+    $("#hb1").slideUp(0000);
+    $("#hb2").slideUp(0000);
     $(".links-container").slideUp(0000);
     $(".explanation-text").slideUp(0000);
     createTypewriter("My Name is Alexi Lambrou", "greetings");
@@ -35,3 +37,17 @@ window.addEventListener('load', function() {
     $(".show-code").toggleClass("code-shown");
     $(".explanation-text").slideToggle();
   });
+
+  // Projects Hidden boxes //
+
+  $("#project-1").hover(
+      function() {
+          $("#hb1").slideToggle();
+      }
+  );
+
+  $("#project-2").hover(
+    function() {
+        $("#hb2").slideToggle();
+    }
+);

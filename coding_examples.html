@@ -1,137 +1,139 @@
-<html lang="en-gb">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alexi Lambrou - Coding Examples</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/2617b01a9a.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <link href="Styles/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="coding-examples-page" class="wrapper">
-            <main>
-                <header>
-                    <h1>Coding Examples</h1>
-                </header>
-                <div id="code-snippets">
-                    <div class="snippets-container">
-                        <div class="snippet1"> <!--Start of code example for HTML/Css Reflection-->
-                            <h2>HTML & CSS Reflection</h2>
-                            <div class="snippet-code"><!--Start of Snippet Example-->
-                               <pre>
-                                   <code class="code-example">
-.dropdown {
-    position: absolute;
-    z-index: 10;
-    left: -1px;
-    right: -1px;
-    font-size: .8125rem;
-    text-transform: uppercase;
-    list-style-image: url(data:0);
-
-li {
-    line-height: 2.813rem;
-    list-style-image: url(data:0);
-
-    &:nth-child(n+3)::after {
-        content: "";
+<!DOCTYPE html>
+    <html lang="en-gb">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Alexi Lambrou - Coding Examples</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/2617b01a9a.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <link href="Styles/style.css" rel="stylesheet">
+        </head>
+        <body>
+            <div id="coding-examples-page" class="wrapper">
+                <main>
+                    <header>
+                        <h1>Coding Examples</h1>
+                    </header>
+                    <div id="code-snippets">
+                        <div class="snippets-container">
+                            <div class="snippet1"> <!--Start of code example for HTML/Css Reflection-->
+                                <h2>HTML & CSS Reflection</h2>
+                                <div class="snippet-code"><!--Start of Snippet Example-->
+                                <pre>
+                                    <code class="code-example">
+    .dropdown {
         position: absolute;
-        display: block;
-        height: 2px;
-        background-color: #fff;
-        width: 10px;
-        top: 22px;
-    }
+        z-index: 10;
+        left: -1px;
+        right: -1px;
+        font-size: .8125rem;
+        text-transform: uppercase;
+        list-style-image: url(data:0);
 
-    &:first-child {
-        flex-grow: 3;
-        @media (min-width: $break-l) {
-            flex-grow: 4;
-        }
-    }
+    li {
+        line-height: 2.813rem;
+        list-style-image: url(data:0);
 
-    &:last-child {
-        flex-grow: 3;
-        @media (min-width: $break-l) {
-            flex-grow: 4;
-        }
-    }
-        &:last-child::after{
+        &:nth-child(n+3)::after {
             content: "";
-            position: relative;
-            display: none;
+            position: absolute;
+            display: block;
+            height: 2px;
+            background-color: #fff;
+            width: 10px;
+            top: 22px;
+        }
+
+        &:first-child {
+            flex-grow: 3;
+            @media (min-width: $break-l) {
+                flex-grow: 4;
+            }
+        }
+
+        &:last-child {
+            flex-grow: 3;
+            @media (min-width: $break-l) {
+                flex-grow: 4;
+            }
+        }
+            &:last-child::after{
+                content: "";
+                position: relative;
+                display: none;
+            }
         }
     }
-}
-                                   </code>
-                               </pre>
-                            </div>
+                                    </code>
+                                </pre>
+                                </div>
 
-                            <div class="show-code">
-                                <h3>What is this?</h3>
+                                <div class="show-code">
+                                    <h3>What is this?</h3>
+                                </div>
+                                <div class="explanation-text">
+                                    <p>For part of the task I had to make a dropdown list that could only appear at certain screensizes 
+                                        and would only reveal itself when hovered over by the mouse. 
+                                        The code above is written in CSS and shows how the dropdown list and it's list items should behave.
+                                    </p>
+                                    <p>The dropdown contained 6 seperate list's with 5 to 6 items in each list so  instead of targetting the items individually,
+                                        I made my selector's target their positions conceptually. The First/ Last &amp; nth child selectors will search for the items
+                                        based on their postion relative to their parent container. 
+                                    </p>
+                                    <p>Using this technique came in very handy because if I ever needed to repeat the process all I would have to do was give another list
+                                        the dropdown class.
+                                    </p>
+                                </div>
+                                <a href="http://netmatters.alexi-lambrou.netmatters-scs.co.uk/" target="_blank" class="see-me-button">See Me In Use</a>
                             </div>
-                            <div class="explanation-text">
-                                <p>For part of the task I had to make a dropdown list that could only appear at certain screensizes 
-                                    and would only reveal itself when hovered over by the mouse. 
-                                    The code above is written in CSS and shows how the dropdown list and it's list items should behave.
-                                </p>
-                                <p>The dropdown contained 6 seperate list's with 5 to 6 items in each list so  instead of targetting the items individually,
-                                    I made my selector's target their positions conceptually. The First/ Last &amp; nth child selectors will search for the items
-                                    based on their postion relative to their parent container. 
-                                </p>
-                                <p>Using this technique came in very handy because if I ever needed to repeat the process all I would have to do was give another list
-                                    the dropdown class.
-                                </p>
-                            </div>
-                            <a href="http://netmatters.alexi-lambrou.netmatters-scs.co.uk/" target="_blank" class="see-me-button">See Me In Use</a>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
 
-            <nav>
-                <div id="nav-content"> 
-                     <a href="index.html#top" class="nav-initial">
-                         <div class="circle-wrap"><h1 class="letters">A.L</h1></div>
-                     </a>
-                     <ul id="nav-list">
-                         <li><a href="about.html">About Me</a></li>
-                         <li><a href="index.html#projects-content">My Portfolio</a></li>
-                         <li><a href="coding_examples.html">Coding Examples</a></li>
-                         <li><a href="scs_scheme.html">SCS Scheme</a></li>
-                         <li><a href="index.html#contact" class="contact-nav">Contact Me</a></li>
-                     </ul>
-                     <ul id="nav-social">
-                         <li><a href="https://twitter.com/AlexiLambrou" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                         <li><a href="https://www.linkedin.com/in/alexi-lambrou-961652143/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                         <li><a href="https://github.com/xtsoulfiretx" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                     </ul>
-                </div>
-             </nav>
-             <div id="mobile-nav">
-                <div class="mobile-nav-wrapper">
+                <nav>
+                    <div id="nav-content"> 
                         <a href="index.html#top" class="nav-initial">
-                            <div class="circle-wrap"><h1 class="letters">A.L</h1></div>
+                            <div class="circle-wrap"><h2 class="letters">A.L</h2></div>
                         </a>
-                        <button class="hamburger hamburger--collapse" type="button">
-                            <span class="hamburger-box">
-                              <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
+                        <ul id="nav-list">
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="index.html#projects-content">My Portfolio</a></li>
+                            <li><a href="coding_examples.html">Coding Examples</a></li>
+                            <li><a href="scs_scheme.html">SCS Scheme</a></li>
+                            <li><a href="index.html#contact" class="contact-nav">Contact Me</a></li>
+                        </ul>
+                        <ul id="nav-social">
+                            <li><a href="https://twitter.com/AlexiLambrou" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/alexi-lambrou-961652143/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/xtsoulfiretx" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="mobile-nav">
+                    <div class="mobile-nav-wrapper">
+                            <a href="index.html#top" class="nav-initial">
+                                <div class="circle-wrap"><h2 class="letters">A.L</h2></div>
+                            </a>
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                    </div>
+                    <div class="links-container">
+                        <ul class="mobile-nav-links">
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="index.html#projects-content">My Portfolio</a></li>
+                            <li><a href="coding_examples.html">Coding Examples</a></li>
+                            <li><a href="scs_scheme.html">SCS Scheme</a></li>
+                            <li><a href="index.html#contact" class="contact-nav">Contact Me</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="links-container">
-                    <ul class="mobile-nav-links">
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="index.html#projects-content">My Portfolio</a></li>
-                        <li><a href="coding_examples.html">Coding Examples</a></li>
-                        <li><a href="scs_scheme.html">SCS Scheme</a></li>
-                        <li><a href="index.html#contact" class="contact-nav">Contact Me</a></li>
-                    </ul>
-                </div>
+                
             </div>
-            
-        </div>
-    </body>
-    <script src="myscript.js"></script>
-</html>
+        </body>
+        <script src="myscript.js"></script>
+    </html>

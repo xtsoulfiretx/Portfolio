@@ -1,5 +1,6 @@
 // partial imports
-@import 'partials/header',
+@import 'partials/variables',
+        'partials/header',
         'partials/projects',
         'partials/contact',
         'partials/nav',
@@ -20,6 +21,10 @@
         padding: 0;
     }
 
+    .hamburger {
+        margin-right: 15px;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -30,7 +35,7 @@
     }
 
     .wrapper main {
-        background-color: #191a1c;
+        background-color: $black;
 
        #scroll-up {
         display: block;
@@ -38,7 +43,7 @@
         text-align: center;
         font-family: 'Roboto', serif;
         font-size: 2rem;
-        color: #ddd;
+        color: $link2;
         text-decoration: none;
 
         &:hover {
@@ -58,7 +63,7 @@
         }
 
         i {
-            color:#ddd;
+            color: $link2;
         }
        }
     }
