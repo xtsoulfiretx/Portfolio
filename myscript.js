@@ -1,141 +1,88 @@
-
 // Typing effect for header H1 element //
-
-window.addEventListener('load', function() {
-    
-    function createTypewriter(text,id){
-        var i = 0;
-        var speed = 90;
-        
-        function typeWriter(text,id) {
-            if (i < text.length) {
-                document.getElementById(id).textContent += text.charAt(i);
-                i++;
-                setTimeout(function() {typeWriter(text,id)}, speed);
-            }
+window.addEventListener('load', function () {
+    function createTypewriter(text, id) {
+      var i = 0;
+      var speed = 90;
+  
+      function typeWriter(text, id) {
+        if (i < text.length) {
+          document.getElementById(id).textContent += text.charAt(i);
+          i++;
+          setTimeout(function () {
+            typeWriter(text, id);
+          }, speed);
         }
-        typeWriter(text,id);
+      }
+  
+      typeWriter(text, id);
     }
-
+  
     if (window.innerWidth >= 1024) {
-
-    console.log ("test success");
-    $("#hb1").slideUp(0000);
-    $("#hb2").slideUp(0000);
-    $("#hb3").slideUp(0000);
-    $("#hb4").slideUp(0000);
-    $("#hb5").slideUp(0000);
-    $("#hb6").slideUp(0000);
+      console.log("test success");
+      $("#hb1").slideUp(0000);
+      $("#hb2").slideUp(0000);
+      $("#hb3").slideUp(0000);
+      $("#hb4").slideUp(0000);
+      $("#hb5").slideUp(0000);
+      $("#hb6").slideUp(0000);
     } else {
-        $("#hb1").slideDown(0000);
-        $("#hb2").slideDown(0000);
-        $("#hb3").slideDown(0000);
-        $("#hb4").slideDown(0000);
-        $("#hb5").slideDown(0000);
-        $("#hb6").slideDown(0000);
-        console.log ("test fail");
+      $("#hb1").slideDown(0000);
+      $("#hb2").slideDown(0000);
+      $("#hb3").slideDown(0000);
+      $("#hb4").slideDown(0000);
+      $("#hb5").slideDown(0000);
+      $("#hb6").slideDown(0000);
+      console.log("test fail");
     }
-
-
+  
     $(".links-container").slideUp(0000);
     $(".explanation-text").slideUp(0000);
     createTypewriter("My Name is Alexi Lambrou", "greetings");
-    setTimeout(function (){createTypewriter("I'm a Web Developer!", "banner-tagline")},3000);
+    setTimeout(function () {
+      createTypewriter("I'm a Web Developer!", "banner-tagline");
+    }, 3000);
   });
-
-  $(window).resize(function() {
-      if (window.innerWidth >= 1024) {
-            $("#hb1").slideUp(0000);
-            $("#hb2").slideUp(0000);
-            $("#hb3").slideUp(0000);
-            $("#hb4").slideUp(0000);
-            $("#hb5").slideUp(0000);
-            $("#hb6").slideUp(0000);
-            
-        console.log ("test success");
-        } else {
-            $("#hb1").slideDown(0000);
-            $("#hb2").slideDown(0000);
-            $("#hb3").slideDown(0000);
-            $("#hb4").slideDown(0000);
-            $("#hb5").slideDown(0000);
-            $("#hb6").slideDown(0000);
-            console.log ("test fail");
-        }
-  })
-
-
-  // Hambuger click effect //
-
-  $(".hamburger").click(function(){
-      $(".hamburger").toggleClass("is-active");
-      $(".links-container").slideToggle();
-  });
-
-  // Code explanation reveal //
-
-  $(".show-code").click(function(){
+  $(window).resize(function () {
+    if (window.innerWidth >= 1024) {
+      $("#hb1").slideUp(0000);
+      $("#hb2").slideUp(0000);
+      $("#hb3").slideUp(0000);
+      $("#hb4").slideUp(0000);
+      $("#hb5").slideUp(0000);
+      $("#hb6").slideUp(0000);
+    } else {
+      $("#hb1").slideDown(0000);
+      $("#hb2").slideDown(0000);
+      $("#hb3").slideDown(0000);
+      $("#hb4").slideDown(0000);
+      $("#hb5").slideDown(0000);
+      $("#hb6").slideDown(0000);
+    }
+  }); // Hambuger click effect //
+  
+  $(".hamburger").click(function () {
+    $(".hamburger").toggleClass("is-active");
+    $(".links-container").slideToggle();
+  }); // Code explanation reveal //
+  
+  $(".show-code").click(function () {
     $(".show-code").toggleClass("code-shown");
     $(".explanation-text").slideToggle();
-  });
-
-  // Projects Hidden boxes //
-
-  for (let i = 1; i <= 6; i++) {
-    $(`#project-${i}`).hover(function () {
+  }); // Projects Hidden boxes //
+  
+  var _loop = function _loop(i) {
+    $("#project-".concat(i)).hover(function () {
       if (window.innerWidth >= 1024) {
-        $(`#hb${i}`).slideToggle();
-        console.log("this should be working")
+        $("#hb".concat(i)).slideToggle();
+        console.log("this should be working");
       } else {
-        console.log("fails")
+        console.log("fails");
       }
-  })
+    });
   };
-
-//   $("#project-1").hover( function () {
-//       if (window.innerWidth >= 1024) {
-//         $("#hb1").slideToggle();
-//       } else {
-//       }
-//   }
-// );
-
-// $("#project-2").hover( function () {
-//     if (window.innerWidth >= 1024) {
-//       $("#hb2").slideToggle();
-//     } else {
-//     }
-// }
-// );
-
-// $("#project-3").hover( function () {
-//     if (window.innerWidth >= 1024) {
-//       $("#hb3").slideToggle();
-//     } else {
-//     }
-// }
-// );
-
-// $("#project-4").hover( function () {
-//     if (window.innerWidth >= 1024) {
-//       $("#hb4").slideToggle();
-//     } else {
-//     }
-// }
-// );
-
-// $("#project-5").hover( function () {
-//     if (window.innerWidth >= 1024) {
-//       $("#hb5").slideToggle();
-//     } else {
-//     }
-// }
-// );
-
-// $("#project-6").hover( function () {
-//     if (window.innerWidth >= 1024) {
-//       $("#hb6").slideToggle();
-//     } else {
-//     }
-// }
-// );
+  
+  for (var i = 1; i <= 6; i++) {
+    _loop(i);
+  }
+  
+  ;
