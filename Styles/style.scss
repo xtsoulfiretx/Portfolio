@@ -39,16 +39,14 @@
 
        #scroll-up {
         display: block;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         text-align: center;
         font-family: 'Roboto', serif;
         font-size: 2rem;
         color: $link2;
         text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        width: 250px;
+        margin: auto;
 
         @media (max-width: 1024px) {
             font-size: 1.5rem;
@@ -59,11 +57,31 @@
         }
 
         a {
-            font-size: 1.5rem;
+            color: $link2;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: .5s;
         }
 
         i {
             color: $link2;
+            transition: .5s;
+        }
+
+        &:hover {
+            a {
+                color: $link;
+                text-shadow: 0 0 15px $secondary;
+            }
+            
+            i {
+                color: $link;
+                text-shadow: 0 0 15px $secondary;
+            }
+        }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            padding-bottom: 60px;
         }
        }
     }

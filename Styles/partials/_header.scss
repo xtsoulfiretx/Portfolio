@@ -57,19 +57,29 @@
             text-align: center;
             font-family: 'Roboto', serif;
             font-size: 2rem;
-            
 
             a {
                 font-size: 1.5rem;
                 color: $link2;
-
-                &:hover {
-                    text-decoration: underline;
-                }
+                transition: .5s;
             }
 
             i {
                 color: $link2;
+                transition: .5s;
+            }
+
+            &:hover {
+
+                a {
+                    color: $link;
+                    text-shadow: 0 0 15px $secondary;
+                }
+                
+                i {
+                    color: $link;
+                    text-shadow: 0 0 15px $secondary;
+                }
             }
         }
     }

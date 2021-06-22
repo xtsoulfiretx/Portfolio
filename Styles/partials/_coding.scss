@@ -65,10 +65,11 @@ body {
            transition: .5s;
 
            &:hover {
-            background-color: $link2;
+            background-color: $link;
             color: $black;
-            border-top: 3px solid $link2;
-            border-bottom: 3px solid $link2;
+            border-top: 3px solid $link;
+            border-bottom: 3px solid $link;
+            box-shadow: 0 0 15px $secondary;
            }
 
         h3 {
@@ -137,8 +138,8 @@ body {
 
             &:hover {
                 color: $black;
-                background: $link2;
-                border-color: $black;
+                background: $link;
+                border-color: $link;
                 box-shadow: 0 0 15px $secondary;
                 cursor: pointer;
             }

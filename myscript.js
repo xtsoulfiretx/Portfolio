@@ -18,6 +18,10 @@ window.addEventListener('load', function() {
     }
     $("#hb1").slideUp(0000);
     $("#hb2").slideUp(0000);
+    $("#hb3").slideUp(0000);
+    $("#hb4").slideUp(0000);
+    $("#hb5").slideUp(0000);
+    $("#hb6").slideUp(0000);
     $(".links-container").slideUp(0000);
     $(".explanation-text").slideUp(0000);
     createTypewriter("My Name is Alexi Lambrou", "greetings");
@@ -49,5 +53,29 @@ window.addEventListener('load', function() {
   $("#project-2").hover(
     function() {
         $("#hb2").slideToggle();
+    }
+);
+
+$("#project-3").hover(
+    function() {
+        $("#hb3").slideToggle();
+    }
+);
+
+$("#project-4").hover(
+    function() {
+        $("#hb4").slideToggle();
+    }
+);
+
+$("#project-5").hover(
+    function() {
+        $("#hb5").slideToggle();
+    }
+);
+
+$("#project-6").hover(
+    function() {
+        $("#hb6").slideToggle();
     }
 );

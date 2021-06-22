@@ -254,7 +254,8 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        position: relative;
+        position: absolute;
+        top: 109px;
         width: 100%;
         background-color: $black;
 
