@@ -1,4 +1,3 @@
-
 // Typing effect for header H1 element //
 
 window.addEventListener('load', function() {
