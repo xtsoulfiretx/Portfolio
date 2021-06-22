@@ -16,17 +16,54 @@ window.addEventListener('load', function() {
         }
         typeWriter(text,id);
     }
+
+    if (window.innerWidth >= 1024) {
+
+    console.log ("test success");
     $("#hb1").slideUp(0000);
     $("#hb2").slideUp(0000);
     $("#hb3").slideUp(0000);
     $("#hb4").slideUp(0000);
     $("#hb5").slideUp(0000);
     $("#hb6").slideUp(0000);
+    } else {
+        $("#hb1").slideDown(0000);
+        $("#hb2").slideDown(0000);
+        $("#hb3").slideDown(0000);
+        $("#hb4").slideDown(0000);
+        $("#hb5").slideDown(0000);
+        $("#hb6").slideDown(0000);
+        console.log ("test fail");
+    }
+
+
     $(".links-container").slideUp(0000);
     $(".explanation-text").slideUp(0000);
     createTypewriter("My Name is Alexi Lambrou", "greetings");
     setTimeout(function (){createTypewriter("I'm a Web Developer!", "banner-tagline")},3000);
   });
+
+  $(window).resize(function() {
+      if (window.innerWidth >= 1024) {
+            $("#hb1").slideUp(0000);
+            $("#hb2").slideUp(0000);
+            $("#hb3").slideUp(0000);
+            $("#hb4").slideUp(0000);
+            $("#hb5").slideUp(0000);
+            $("#hb6").slideUp(0000);
+            
+        console.log ("test success");
+        } else {
+            $("#hb1").slideDown(0000);
+            $("#hb2").slideDown(0000);
+            $("#hb3").slideDown(0000);
+            $("#hb4").slideDown(0000);
+            $("#hb5").slideDown(0000);
+            $("#hb6").slideDown(0000);
+            console.log ("test fail");
+        }
+  })
+
 
   // Hambuger click effect //
 
@@ -44,38 +81,61 @@ window.addEventListener('load', function() {
 
   // Projects Hidden boxes //
 
-  $("#project-1").hover(
-      function() {
-          $("#hb1").slideToggle();
+  for (let i = 1; i <= 6; i++) {
+    $(`#project-${i}`).hover(function () {
+      if (window.innerWidth >= 1024) {
+        $(`#hb${i}`).slideToggle();
+        console.log("this should be working")
+      } else {
+        console.log("fails")
       }
-  );
+  })
+  };
 
-  $("#project-2").hover(
-    function() {
-        $("#hb2").slideToggle();
-    }
-);
+//   $("#project-1").hover( function () {
+//       if (window.innerWidth >= 1024) {
+//         $("#hb1").slideToggle();
+//       } else {
+//       }
+//   }
+// );
 
-$("#project-3").hover(
-    function() {
-        $("#hb3").slideToggle();
-    }
-);
+// $("#project-2").hover( function () {
+//     if (window.innerWidth >= 1024) {
+//       $("#hb2").slideToggle();
+//     } else {
+//     }
+// }
+// );
 
-$("#project-4").hover(
-    function() {
-        $("#hb4").slideToggle();
-    }
-);
+// $("#project-3").hover( function () {
+//     if (window.innerWidth >= 1024) {
+//       $("#hb3").slideToggle();
+//     } else {
+//     }
+// }
+// );
 
-$("#project-5").hover(
-    function() {
-        $("#hb5").slideToggle();
-    }
-);
+// $("#project-4").hover( function () {
+//     if (window.innerWidth >= 1024) {
+//       $("#hb4").slideToggle();
+//     } else {
+//     }
+// }
+// );
 
-$("#project-6").hover(
-    function() {
-        $("#hb6").slideToggle();
-    }
-);
+// $("#project-5").hover( function () {
+//     if (window.innerWidth >= 1024) {
+//       $("#hb5").slideToggle();
+//     } else {
+//     }
+// }
+// );
+
+// $("#project-6").hover( function () {
+//     if (window.innerWidth >= 1024) {
+//       $("#hb6").slideToggle();
+//     } else {
+//     }
+// }
+// );

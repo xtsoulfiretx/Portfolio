@@ -15,6 +15,11 @@
     height: 93vh;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #header-home #banner {
+    margin-top: -15px;
+  }
+}
 #header-home h1 {
   font-family: "Bree Serif", serif;
   font-size: 2.5rem;
@@ -56,6 +61,7 @@
 #header-home #scroll-down {
   display: block;
   margin: 10px 0;
+  margin-top: -10px;
   text-align: center;
   font-family: "Roboto", serif;
   font-size: 2rem;
@@ -76,6 +82,11 @@
 #header-home #scroll-down:hover i {
   color: #F1E4E8;
   text-shadow: 0 0 15px #76949F;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #header-home #scroll-down {
+    margin-top: -22px;
+  }
 }
 
 #projects-content {
@@ -126,8 +137,14 @@
     width: calc(33.3% - 12px);
   }
 }
+@media screen and (min-width: 1700px) {
+  #projects-content .project {
+    width: 370px;
+    margin-right: 20px;
+  }
+}
 #projects-content .project .hidden-box {
-  display: flex;
+  display: none;
   border: 3px solid #8D1514;
   width: 100%;
   margin-top: 10px;
@@ -713,10 +730,6 @@ nav .nav-initial .circle-wrap h2 {
   #about-me-page .image-container img {
     width: 350px;
   }
-}
-
-.wrapper main {
-  padding-bottom: 3rem;
 }
 
 body {
@@ -1339,6 +1352,7 @@ body {
 
 .wrapper main {
   background-color: #110B11;
+  padding-bottom: 3rem;
 }
 .wrapper main #scroll-up {
   display: block;

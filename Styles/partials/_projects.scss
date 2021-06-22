@@ -51,8 +51,13 @@
                 width: calc(33.3% - 12px);
             }
 
+            @media screen and (min-width: 1700px) {
+                width: 370px;
+                margin-right: 20px;
+            }
+
             .hidden-box {
-                display: flex;
+                display: none;
                 border: 3px solid $link2;
                 width: 100%;
                 margin-top: 10px;
