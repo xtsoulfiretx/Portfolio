@@ -759,10 +759,24 @@ body {
   padding: 15px 0px;
   text-shadow: 0 0 20px #111;
 }
-@media (min-width: 1024px) {
+#coding-examples-page #explanation2 {
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1023px) {
+  #coding-examples-page #explanation2 {
+    height: 840px;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 1920px) {
   #coding-examples-page #explanation2 {
     height: 310px;
-    overflow-y: scroll;
+  }
+}
+@media (max-width: 1340px) {
+  #coding-examples-page #explanation2 {
+    height: 490px;
   }
 }
 #coding-examples-page .snippets-container {
