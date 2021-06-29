@@ -70,10 +70,11 @@ window.addEventListener('load', function() {
 
   // Code explanation reveal //
 
-  $(".show-code").click(function(){
-    $(".show-code").toggleClass("code-shown");
-    $(".explanation-text").slideToggle();
+  $(".whats-this1").click(function(){
+    $(".whats-this1").toggleClass("code-shown");
+    $(".explanation1").slideToggle();
   });
+
 
   // Projects Hidden boxes //
 

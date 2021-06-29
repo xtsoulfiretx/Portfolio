@@ -65,10 +65,15 @@ window.addEventListener('load', function () {
     $(".links-container").slideToggle();
   }); // Code explanation reveal //
   
-  $(".show-code").click(function () {
-    $(".show-code").toggleClass("code-shown");
-    $(".explanation-text").slideToggle();
-  }); // Projects Hidden boxes //
+  $("#whats-this1").click(function () {
+    $("#whats-this1").toggleClass("code-shown");
+    $("#explanation1").slideToggle();
+  });
+  
+  $("#whats-this2").click(function () {
+    $("#whats-this2").toggleClass("code-shown");
+    $("#explanation2").slideToggle();
+  });// Projects Hidden boxes //
   
   var _loop = function _loop(i) {
     $("#project-".concat(i)).hover(function () {

@@ -22,7 +22,7 @@
                     </header>
                     <div id="code-snippets">
                         <div class="snippets-container">
-                            <div class="snippet1"> <!--Start of code example for HTML/Css Reflection-->
+                            <div class="snippet"> <!--Start of code example for HTML/Css Reflection-->
                                 <h2>HTML & CSS Reflection</h2>
                                 <div class="snippet-code"><!--Start of Snippet Example-->
                                 <pre>
@@ -74,11 +74,11 @@
                                 </pre>
                                 </div>
 
-                                <div class="show-code">
+                                <div class="show-code" id="whats-this1">
                                     <h3>What is this?</h3>
                                 </div>
-                                <div class="explanation-text">
-                                    <p>For part of the task I had to make a dropdown list that could only appear at certain screensizes 
+                                <div class="explanation-text" id="explanation1">
+                                    <p>For part of the task I had to make a dropdown list that could only appear at certain screen sizes 
                                         and would only reveal itself when hovered over by the mouse. 
                                         The code above is written in CSS and shows how the dropdown list and it's list items should behave.
                                     </p>
@@ -91,6 +91,77 @@
                                     </p>
                                 </div>
                                 <a href="http://netmatters.alexi-lambrou.netmatters-scs.co.uk/" target="_blank" class="see-me-button">See Me In Use</a>
+                            </div>
+                            <div class="snippet">
+                                <h2>SQL Challenge</h2>
+                                <div class="snippet-code"><!--Start of Snippet Example--> 
+                                    <pre>
+                                        <code class="code-example">
+    SELECT 
+        m.mov_title AS "Movie Name",
+        a.act_fname || ' ' || a.act_lname AS "Lead Actor",
+        d.dir_fname || ' ' || d.dir_lname AS "Director",
+        g.gen_title AS "Genre",
+        m.mov_year AS "Year of Release",
+        r.rev_stars AS "Rating"
+
+        FROM
+            movie m, 
+            movie_direction md, 
+            director d, 
+            rating r,
+            movie_genres mg,
+            genres g,
+            actor a,
+            
+            (SELECT DISTINCT *
+            FROM movie_cast) mc
+
+        WHERE 
+            m.mov_id=r.mov_id
+            AND m.mov_id=md.mov_id
+            AND d.dir_id=md.dir_id
+            AND m.mov_id=mg.mov_id
+            AND mg.gen_id=g.gen_id
+            AND m.mov_id=mc.mov_id
+            AND a.act_id=mc.act_id
+            
+
+        ORDER BY "Rating" DESC;
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="show-code" id="whats-this2">
+                                    <h3>What is this?</h3>
+                                </div>
+                                <div class="explanation-text" id="explanation2">
+                                    <p>For part of the course we had to learn about the query language SQL and after covering a large amount of it's syntax we
+                                        were then given the challenge to create a fairly complex query for one of four different databases. I chose the movie database 
+                                        for my example because aside from being a fan of movies myself it was a good oppourtunity to try out some interesting syntax.
+                                    </p>
+                                    <p>This query does a few different things at once so i will explain the finer points.
+                                        The SELECT portion of the query is the part that will display all of the different columns to the user upon request.
+                                        The first part of the query collects a list of movies from the database and then displays it's lead actor and director, Then it 
+                                        displays the films genre and year of release followed by it's overall rating.  
+                                    </p>
+                                    <p>The FROM part of the query collects all the different pieces of information from the individual tables attached to the database
+                                        and saves the different table names for ease of use. The FROM section also contains a simple subquery that makes sure that 
+                                        the query only displays a single row of information per film for readability. 
+                                    </p>
+                                    <p>Finally the WHERE section of the query is what links all the different tables together by linking primary keys to foreign keys
+                                       which are shown by the equality operators. At the end of the query is my ORDER BY request that organizes the whole query by the 
+                                       highest rated movies. 
+                                    </p>
+                                    <p>Upon tetsting you may notice that the film "Trainspotting" has no actualy rating, this is due to the database not holding
+                                        the information. At first I tried to make the query fill this box but after some difficulties i decided it would be best 
+                                        to leave the box blank. If this was a real request for an actual website then I would use javascript to fill any empty box
+                                        with the term "N/A" as this would prove a lot easier then trying to work SQL for the feature.
+                                    </p>
+                                    <p>Try this query out yourself by clicking the "Try Me Out" button below! All you have to do is copy this snippet and paste 
+                                        it into the "SQL Practice Editor" near the bottom of the linked page.
+                                    </p>
+                                </div>
+                                <a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php#SQLEDITOR" target="_blank" class="see-me-button">Try Me Out</a>
                             </div>
                         </div>
                     </div>
