@@ -97,5 +97,9 @@
     }
 
     #projects {
-        margin-top: 90px;
+        padding: 3rem 5rem 0rem 5rem;
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 3rem 4rem 0rem 4rem;
+        }
     }

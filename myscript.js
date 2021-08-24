@@ -18,7 +18,6 @@ window.addEventListener('load', function () {
     }
   
     if (window.innerWidth >= 1024) {
-      console.log("test success");
       $("#hb1").slideUp(0000);
       $("#hb2").slideUp(0000);
       $("#hb3").slideUp(0000);
@@ -32,7 +31,6 @@ window.addEventListener('load', function () {
       $("#hb4").slideDown(0000);
       $("#hb5").slideDown(0000);
       $("#hb6").slideDown(0000);
-      console.log("test fail");
     }
   
     $(".links-container").slideUp(0000);
@@ -76,12 +74,10 @@ window.addEventListener('load', function () {
   });// Projects Hidden boxes //
   
   var _loop = function _loop(i) {
-    $("#project-".concat(i)).hover(function () {
+    $("#project-".concat(i)).click(function () {
       if (window.innerWidth >= 1024) {
         $("#hb".concat(i)).slideToggle();
-        console.log("this should be working");
       } else {
-        console.log("fails");
       }
     });
   };

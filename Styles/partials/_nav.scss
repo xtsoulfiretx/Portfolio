@@ -161,23 +161,27 @@
         width: 100%;
         justify-content: space-around;
         list-style: none;
+        color: $link2;
 
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
             list-style: none;
         }
 
-        i {
-            color: $link2;
-            font-size: 2.5rem;
-            transition: .5s;
+        li {
 
-            @media (max-height: 740px) {
-                color:$black;
-            }
-
-            &:hover {
-                color: $link;
-                text-shadow: 0 0 15px $secondary;
+            i {
+                color: $link2;
+                font-size: 2.5rem;
+                transition: .5s;
+    
+                @media (max-height: 740px) {
+                    color:$black;
+                }
+    
+                &:hover {
+                    color: $link;
+                    text-shadow: 0 0 15px $secondary;
+                }
             }
         }
     }
@@ -276,7 +280,7 @@
             }
 
             a {
-                color: $red;
+                color: $link2;
                 font-size: 1.25rem;
                 text-decoration: none;
 

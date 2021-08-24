@@ -4,16 +4,19 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 90%;
-        margin: auto;
+        justify-content: center;
         font-family: 'Roboto', serif;
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            justify-content: space-between;
+        }
         
 
         a {
             display: flex;
             text-decoration: none;
             transition: .5s;
+            color: $link2!important;
         }
 
         h2 {
@@ -39,12 +42,13 @@
             flex-direction: column;
             position: relative;
             width: 100%;
-            margin-bottom: 2em;
             transition: .5s;
+            flex-basis: 32%;
+            margin-bottom: 3rem;
 
             @media (min-width: 768px) and (max-width: 1023px) {
                 display: flex;
-                width: calc(50% - 12px);
+                flex-basis: 45%;
             }
 
             @media screen and (min-width: 1024px) {
@@ -71,6 +75,21 @@
 
                 @media (min-width: 1500px) {
                     width:  370px;
+                }
+
+                button {
+                    padding: 5px;
+                    margin-top: 5px;
+                    background-color: $black;
+                    border: 2px solid $link2;
+                    transition: .5s;
+
+                    &:hover {
+                        border-color: $link!important;
+                        a {
+                            color: $link!important;
+                        }
+                    }
                 }
             }
 
