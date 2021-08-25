@@ -123,40 +123,90 @@
     .first-line-form-input {
         display: flex;
         flex-direction: row;
+
+        .fname-input{
+            margin-right: 10px;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            .icon-container {
+                width: 10%;
+                padding-right: 10px;
+            }
+        }
     }
 
-    #first-name-input{
-        margin-right: 10px;
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        .icon-container {
+            display: flex;
+            border: 2px solid $red;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-left: none;
+            width: 10%;
+            height: 50px;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            i {
+                position: absolute;
+            }
+        }
     }
-
-    #first-name-input,
-    #last-name-input {
-        width: 50%;
-    }
+    
 
     .style-input {
         display: flex;
-        border: 2px solid #c8c8c8;
-        border-radius: 5px;
-        background-color: #e6e6e6;
+        border: 2px solid $red;
+        border-right: none;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        color: #ddd;
+        background-color: $black;
         padding: 1px 8px;
         margin-bottom: 1em;
-        width: 100%;
+        width: 90%;
         height: 50px;
         font-size: 1rem;
-
-        &:focus {
-            box-shadow: 0 0 15px $secondary;
-            outline: $red 1px;
-        }
     }
 
 
     #message {
         height: 200px;
+        width: 100%;
+        border: 2px solid $red;
+        border-radius: 5px;
         overflow: auto;
         position: relative;
         font-family: 'Roboto', serif;
         font-size: 1rem;
         padding: 5px 8px;
+    }
+
+    #message-warning {
+        border: 3px solid $link2;
+        padding: 5px;
+        font-size: 1.25rem;
+        color: #ddd;
+        width: 70%;
+        margin-bottom: 10px;
+        font-family: 'Roboto', serif;
+        transition: .5s;
+    }
+
+    .tick-icon {
+        color: #5fcf80;
+    }
+
+    .neutral-icon {
+        color: gray;
+    }
+
+    .cross-icon {
+        color: $red;
     }

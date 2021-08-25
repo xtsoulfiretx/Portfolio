@@ -99,12 +99,41 @@
 
                             <form id="contact-form" method="POST">
                                 <div class="first-line-form-input">
-                                <input type="text" placeholder="First Name*" id="first-name-input" class="style-input">
-                                <input type="text" placeholder="Last Name*" id="last-name-input" class="style-input">
+                                    <div class="input-container fname-input">
+                                        <input type="text" placeholder="First Name" id="first-name-input" class="style-input">
+                                        <div class="icon-container">
+                                            <i class="fas fa-check-circle fname-tick tick-icon icon-hidden"></i>
+                                            <i class="fas fa-minus-circle fname-neutral neutral-icon"></i>
+                                            <i class="fas fa-times-circle fname-cross cross-icon icon-hidden"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-container lname-input">
+                                        <input type="text" placeholder="Last Name" id="last-name-input" class="style-input">
+                                        <div class="icon-container">
+                                            <i class="fas fa-check-circle lname-tick tick-icon icon-hidden"></i>
+                                            <i class="fas fa-minus-circle lname-neutral neutral-icon"></i>
+                                            <i class="fas fa-times-circle lname-cross cross-icon icon-hidden"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <input type="email" placeholder="Email Address*" id="email" class="style-input">
-                                <input type="text" placeholder="Subject" id="subject" class="style-input">
+                                <div class="input-container email-input">
+                                    <input type="email" placeholder="Email Address*" id="email" class="style-input">
+                                    <div class="icon-container">
+                                        <i class="fas fa-check-circle email-tick tick-icon icon-hidden"></i>
+                                        <i class="fas fa-minus-circle email-neutral neutral-icon"></i>
+                                        <i class="fas fa-times-circle email-cross cross-icon icon-hidden"></i>
+                                    </div>
+                                </div>
+                                <div class="input-container subject-input">
+                                    <input type="text" placeholder="Subject" id="subject" class="style-input">
+                                    <div class="icon-container">
+                                        <i class="fas fa-check-circle subject-tick tick-icon icon-hidden"></i>
+                                        <i class="fas fa-minus-circle subject-neutral neutral-icon"></i>
+                                        <i class="fas fa-times-circle subject-cross cross-icon icon-hidden"></i>
+                                    </div>
+                                </div>
                                 <textarea placeholder="Message" id="message" class="style-input" rows="6" style="resize: none;"></textarea>
+                                <p id="message-warning" class="icon-hidden">Please adjust your message and remove any special characters.</p>
                                 <button>Submit</button>
                             </form>
 

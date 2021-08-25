@@ -26,36 +26,34 @@
 
     .scs-content {
         width: 100%;
-        padding: 0 15%;
-        text-align: left;
-        background-color: $black;
+        padding: 3rem 5rem 0rem 5rem;
 
-        @media (max-width: 767px) {
-            padding: 0 5%;
-        }     
-
-        @media (max-width: 1200px) {
-            padding: 0 8%;
+        @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 3rem 4rem 0rem 4rem;
         }
-        
-        @media (max-width: 1439px) {
-            padding: 0 10%;
-        }  
+        text-align: left;
+        background-color: $black; 
     }
 
     .scs-intro {
         display: flex;
         justify-content: space-between;
-        padding-top: 80px;
-        margin-bottom: 100px;
+        align-items: center;
+        padding: 80px 10px 100px;
+        border-right: 3px solid $red;
 
         @media (max-width: 767px) {
             flex-direction: column;
-            margin-bottom: 70px;
+            padding-bottom: 70px;
+        }
+
+        .scs-title {
+            display: flex;
+            justify-content: center;
+            width: 40%;
         }
 
         h2 {
-            width: 40%;
             font-weight: 500;
             @media (max-width: 767px) {
                 width: 100%;
@@ -67,7 +65,7 @@
 
         p {
             font-size: 1.1rem;
-            width: 60%;
+            width: 50%;
             padding-left: 30px;
             border-left: 3px solid $red;
 
@@ -94,18 +92,37 @@
     .treehouse-netmatters {
         display: flex;
         justify-content: space-between;
+        border-top: 3px solid $red;
+        border-left: 3px solid $red;
+        border-top-left-radius: 10px;
+
+        padding: 20px;
 
         @media (max-width: 1023px) {
             flex-direction: column;
+        }
+
+        .netmatters {
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .treehouse {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
     .treehouse,
     .netmatters {
-        width: 48%;
-        padding: 0 3rem 2rem;
+        width: 50%;
         border-radius: 25px;
-        border: 3px solid $red;
         margin-bottom: 40px;
 
         @media (max-width: 1023px) {
@@ -183,6 +200,7 @@
 
     .treehouse-netmatters-img {
         display: flex;
+        list-style: none;
         justify-content: center;
         align-items: center;
         width: auto;

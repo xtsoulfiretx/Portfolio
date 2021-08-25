@@ -29,6 +29,8 @@
         .about-personal {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            border-right: 3px solid $red; 
 
             @media (max-width: 1023px) {
                 flex-direction: column;
@@ -37,10 +39,6 @@
                     display: block;
                 }
             }
-        }
-
-        .about-experience {
-            border-left: 3px solid $red;
         }
 
         a {
@@ -56,9 +54,9 @@
             }
         }
 
+        
         h2 {
             font-size: 2.2rem;
-            margin-top: 10px;
             color: $red;
             border-bottom: 3px solid $red;
             padding-left: 10px;
@@ -66,6 +64,8 @@
 
         .start {
             margin-top: 80px;
+            border-left: 3px solid $red;
+            border-bottom-left-radius: 10px;
         }
 
         p {
@@ -76,38 +76,51 @@
                 
         }
 
-        h3 {
-            display: inline-block;
-            color: $red;
-            padding-top: 15px;
-            font-size: 1.6rem;
-            padding-left: 10px;
-            border-bottom: 3px solid $red;
-            border-bottom-left-radius: 10px;
-        }
-
-        h4 {
-            padding-top: 5px;
-            font-size: 1.4rem;
-            padding-left: 10px;
-            font-weight: 500;
-        }
-
-        h5 {
-            font-size: 1rem;
-            padding-left: 10px;
-            font-weight: 400;
-        }
-
         .personal-text {
             padding-top: 10px;
             padding-bottom: 20px;
+            width: 60%;
+        }
+
+        .about-experience {
+            h2 {
+                border-right: 3px solid $red;
+                border-bottom-right-radius: 10px;
+            }
+        }
+
+        .details {
+            border-left: 3px solid $red;
+    
+            h3 {
+                display: inline-block;
+                color: $red;
+                padding-top: 15px;
+                font-size: 1.6rem;
+                padding-left: 10px;
+                border-bottom: 3px solid $red;
+                border-bottom-left-radius: 10px;
+            }
+    
+            h4 {
+                padding-top: 5px;
+                font-size: 1.4rem;
+                padding-left: 10px;
+                font-weight: 500;
+            }
+    
+            h5 {
+                font-size: 1rem;
+                padding-left: 10px;
+                font-weight: 400;
+            }
         }
     }
 
     .image-container {
         margin-top: 20px;
         max-width: 50%;
+        margin-right: 20px ;
 
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
             max-width: none;
