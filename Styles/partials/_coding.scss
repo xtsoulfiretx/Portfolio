@@ -107,6 +107,12 @@ body {
        }
    }
 
+   .s2 {
+    @media screen and (max-width: 1024px) {
+        border-top: 3px solid $red;
+    }
+   }
+
    .snippet-code {
            margin: 20px 10px;
            background-color: #111111;

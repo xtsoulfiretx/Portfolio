@@ -38,7 +38,6 @@
 
     li {
         line-height: 2.813rem;
-        list-style-image: url(data:0);
 
         &:nth-child(n+3)::after {
             content: "";
@@ -78,21 +77,24 @@
                                     <h3>What is this?</h3>
                                 </div>
                                 <div class="explanation-text" id="explanation1">
-                                    <p>For part of the task I had to make a dropdown list that could only appear at certain screen sizes 
-                                        and would only reveal itself when hovered over by the mouse. 
-                                        The code above is written in CSS and shows how the dropdown list and it's list items should behave.
+                                    <p>The above code was used for my netmatters homepage recreation.</p>
+
+                                    <p>The header navigation of the site uses a dropdown menu with several subjects that all feature their own individual dropdown menu's.
+                                        The first section selects the dropdown class that is container for the other dropdown menu's which are represented with the li or list item tag.
                                     </p>
-                                    <p>The dropdown contained 6 seperate list's with 5 to 6 items in each list so  instead of targetting the items individually,
-                                        I made my selector's target their positions conceptually. The First/ Last &amp; nth child selectors will search for the items
-                                        based on their postion relative to their parent container. 
+
+                                    <p>Inside the li tag I set the line height of the text and also target the individual dropdowns with the first and last child sectors which
+                                        will select the first and last items in the list respectively. This was to affect empty boxes that were placed on either side of the menu 
+                                        as a sort of padding to keep the menu's inside the center of the page.
                                     </p>
-                                    <p>Using this technique came in very handy because if I ever needed to repeat the process all I would have to do was give another list
-                                        the dropdown class.
+
+                                    <p>The nth child selector is used for a dash that is inbetween every dropdown menu's items and occurs on the 3rd gap seperating potential
+                                        text spaces. And the last child's after selector is to remove the final dash from the end of the dropdown items.
                                     </p>
                                 </div>
                                 <a href="http://netmatters.alexi-lambrou.netmatters-scs.co.uk/" target="_blank" class="see-me-button">See Me In Use</a>
                             </div>
-                            <div class="snippet">
+                            <div class="snippet s2">
                                 <h2>SQL Challenge</h2>
                                 <div class="snippet-code"><!--Start of Snippet Example--> 
                                     <pre>
@@ -156,7 +158,7 @@
                                        highest rated movies. 
                                     </p>
                                     <p>Upon tetsting you may notice that the film "Trainspotting" has no actualy rating, this is due to the database not holding
-                                        the information. At first I tried to make the query fill this box but after some difficulties i decided it would be best 
+                                        the information. At first I tried to make the query fill this box but after some difficulties I decided it would be best 
                                         to leave the box blank. If this was a real request for an actual website then I would use javascript to fill any empty box
                                         with the term "N/A" as this would prove a lot easier then trying to work SQL for the feature.
                                     </p>

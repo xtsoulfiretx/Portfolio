@@ -46,6 +46,10 @@
                 font-size: 1.5rem;
                 padding-bottom: 10px;
 
+                @media (max-width: 340px) {
+                    font-size: 1rem;
+                }
+
                 &:hover {
                     color: $link;
                 }
@@ -82,7 +86,7 @@
             font-weight: 600;
             font-size: 1.25rem;
             background-color: $black;
-            color:$link2;
+            color: $link2;
             padding: 10px 15px;
             border: 3px solid $link2;
             transition: .5s;
@@ -95,6 +99,11 @@
                 box-shadow: 0 0 15px $secondary;
                 cursor: pointer;
             }
+        }
+
+        .btnoff {
+            border-color:gray;
+            color: gray;
         }
 
         @media (max-width: 767px) {
@@ -124,8 +133,22 @@
         display: flex;
         flex-direction: row;
 
-        .fname-input{
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .fname-input {
             margin-right: 10px;
+
+            @media (max-width: 768px) {
+                width: 100%!important;
+            }
+        }
+
+        .lname-input {
+            @media (max-width: 768px) {
+                width: 100%!important;
+            }
         }
 
         .input-container {
@@ -191,12 +214,11 @@
     #message-warning {
         border: 3px solid $link2;
         padding: 5px;
-        font-size: 1.25rem;
+        font-size: 1rem;
         color: #ddd;
-        width: 70%;
-        margin-bottom: 10px;
+        width: 100%;
         font-family: 'Roboto', serif;
-        transition: .5s;
+        margin-bottom: 20px;
     }
 
     .tick-icon {

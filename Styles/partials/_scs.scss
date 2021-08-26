@@ -44,13 +44,19 @@
 
         @media (max-width: 767px) {
             flex-direction: column;
-            padding-bottom: 70px;
+            padding-top: 0;
+            padding-bottom: 30px;
+            padding-right: 0px;
         }
 
         .scs-title {
             display: flex;
             justify-content: center;
             width: 40%;
+            color: $red;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
         }
 
         h2 {
@@ -73,6 +79,7 @@
                 width: 100%;
                 border-left: none;
                 padding-left: 0;
+                padding-right: 15px;
             }
 
             @media (min-width: 768px) {
@@ -100,6 +107,7 @@
 
         @media (max-width: 1023px) {
             flex-direction: column;
+            padding: 0;
         }
 
         .netmatters {
@@ -108,7 +116,19 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: stretch;
+
+                @media (min-width: 767px) {
+                    align-items: center;
+                }
+
+                @media (min-width: 1024px) {
+                    align-items: stretch;
+                }
+
+                @media (min-width: 1452px) {
+                    align-items: center;
+                }
             }
         }
 
@@ -116,29 +136,35 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media (max-width: 1023px) {
+                padding-bottom: 20px;
+                border-bottom: 3px solid $red;
+            }
+
+            @media (min-width: 1025px) {
+                padding-right: 10px;
+            }
         }
     }
 
     .treehouse,
     .netmatters {
         width: 50%;
-        border-radius: 25px;
         margin-bottom: 40px;
 
         @media (max-width: 1023px) {
             width: 100%;
-        }
-
-        @media (max-width: 1400px) {
-            padding: 0 2rem 2rem;
+            margin-bottom: 20px;
         }
 
         p {
             margin-top: 20px;
-            font-size: .8rem;
+            font-size: 1.1rem;
             font-weight: 400;
+            padding-left: 20px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1025px) {
                 font-size: .95rem;
             }
 
@@ -150,13 +176,9 @@
         h3 {
             margin-top: 20px;
             margin-bottom: 30px;
-            font-size: .9rem;
+            font-size: 1.1rem;
             font-weight: 500;
             color: #5fcf80;
-
-            @media (min-width: 768px) {
-                font-size: 1.1rem;
-            }
 
             @media (min-width: 1200px) {
                 font-size: 1.3rem;
@@ -185,10 +207,12 @@
         }
 
         li {
-            margin-top: 10px;
-            font-size: .8rem;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            padding-left: 20px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 1025px) {
                 font-size: .95rem;
             }
 
@@ -206,6 +230,10 @@
         width: auto;
         height: 100px;
         margin-top: 20px;
+        
+        @media (max-width: 590px) {
+            padding-left: 20px;
+        }
 
         img {
             max-width: 100%;

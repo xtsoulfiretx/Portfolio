@@ -80,6 +80,10 @@
             padding-top: 10px;
             padding-bottom: 20px;
             width: 60%;
+
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+            }
         }
 
         .about-experience {

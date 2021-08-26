@@ -99,13 +99,25 @@
     #projects {
         padding: 3rem 5rem 0rem 5rem;
 
+        @media screen and (max-width: 1240px) {
+            padding: 3rem 1rem 0rem 1rem;
+        }
+
+        @media screen and (max-width: 1110px) {
+            padding: 3rem 0rem 0rem 0rem;
+        }
+
         @media (min-width: 768px) and (max-width: 1023px) {
             padding: 3rem 4rem 0rem 4rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 3rem 2rem 0rem 2rem;
         }
     }
 
     .icon-visible {
-        display: inline;
+        display: block;
     }
 
     .icon-hidden {

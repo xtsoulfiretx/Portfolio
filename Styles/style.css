@@ -97,6 +97,11 @@
   justify-content: center;
   font-family: "Roboto", serif;
 }
+@media screen and (max-width: 767px) {
+  #projects-content {
+    flex-direction: column;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   #projects-content {
     justify-content: space-between;
@@ -138,15 +143,14 @@
     flex-basis: 45%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1580px) {
   #projects-content .project {
-    width: calc(33.3% - 12px);
+    flex-basis: 45%;
   }
 }
-@media screen and (min-width: 1700px) {
+@media screen and (max-width: 1080px) {
   #projects-content .project {
-    width: 370px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 #projects-content .project .hidden-box {
@@ -206,6 +210,11 @@
   #projects-content .project-img {
     height: 185px;
     width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #projects-content .project-img {
+    height: 240px;
   }
 }
 #projects-content .project-img img {
@@ -279,6 +288,11 @@
   font-size: 1.5rem;
   padding-bottom: 10px;
 }
+@media (max-width: 340px) {
+  #contact-info a h3 {
+    font-size: 1rem;
+  }
+}
 #contact-info a h3:hover {
   color: #F1E4E8;
 }
@@ -323,6 +337,10 @@
   box-shadow: 0 0 15px #76949F;
   cursor: pointer;
 }
+#contact-form .btnoff {
+  border-color: gray;
+  color: gray;
+}
 @media (max-width: 767px) {
   #contact-form {
     width: 100%;
@@ -353,8 +371,23 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 768px) {
+  .first-line-form-input {
+    flex-direction: column;
+  }
+}
 .first-line-form-input .fname-input {
   margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .first-line-form-input .fname-input {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .first-line-form-input .lname-input {
+    width: 100% !important;
+  }
 }
 .first-line-form-input .input-container {
   display: flex;
@@ -416,12 +449,11 @@
 #message-warning {
   border: 3px solid #d99a07;
   padding: 5px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #ddd;
-  width: 70%;
-  margin-bottom: 10px;
+  width: 100%;
   font-family: "Roboto", serif;
-  transition: 0.5s;
+  margin-bottom: 20px;
 }
 
 .tick-icon {
@@ -764,6 +796,11 @@ nav .nav-initial .circle-wrap h2 {
   padding-bottom: 20px;
   width: 60%;
 }
+@media screen and (max-width: 1024px) {
+  #about-me-page .about-content .personal-text {
+    width: 100%;
+  }
+}
 #about-me-page .about-content .about-experience h2 {
   border-right: 3px solid #cf0e0e;
   border-bottom-right-radius: 10px;
@@ -919,6 +956,11 @@ body {
 #coding-examples-page .snippets-container .explanation-text p {
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 1024px) {
+  #coding-examples-page .s2 {
+    border-top: 3px solid #cf0e0e;
+  }
+}
 #coding-examples-page .snippet-code {
   margin: 20px 10px;
   background-color: #111111;
@@ -1019,13 +1061,21 @@ body {
 @media (max-width: 767px) {
   #scs-page .scs-intro {
     flex-direction: column;
-    padding-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-right: 0px;
   }
 }
 #scs-page .scs-intro .scs-title {
   display: flex;
   justify-content: center;
   width: 40%;
+  color: #cf0e0e;
+}
+@media screen and (max-width: 767px) {
+  #scs-page .scs-intro .scs-title {
+    width: 100%;
+  }
 }
 #scs-page .scs-intro h2 {
   font-weight: 500;
@@ -1049,6 +1099,7 @@ body {
     width: 100%;
     border-left: none;
     padding-left: 0;
+    padding-right: 15px;
   }
 }
 @media (min-width: 768px) {
@@ -1077,6 +1128,7 @@ body {
 @media (max-width: 1023px) {
   #scs-page .treehouse-netmatters {
     flex-direction: column;
+    padding: 0;
   }
 }
 #scs-page .treehouse-netmatters .netmatters ul {
@@ -1084,38 +1136,59 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+}
+@media (min-width: 767px) {
+  #scs-page .treehouse-netmatters .netmatters ul {
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  #scs-page .treehouse-netmatters .netmatters ul {
+    align-items: stretch;
+  }
+}
+@media (min-width: 1452px) {
+  #scs-page .treehouse-netmatters .netmatters ul {
+    align-items: center;
+  }
 }
 #scs-page .treehouse-netmatters .treehouse {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1023px) {
+  #scs-page .treehouse-netmatters .treehouse {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #cf0e0e;
+  }
+}
+@media (min-width: 1025px) {
+  #scs-page .treehouse-netmatters .treehouse {
+    padding-right: 10px;
+  }
+}
 #scs-page .treehouse,
 #scs-page .netmatters {
   width: 50%;
-  border-radius: 25px;
   margin-bottom: 40px;
 }
 @media (max-width: 1023px) {
   #scs-page .treehouse,
 #scs-page .netmatters {
     width: 100%;
-  }
-}
-@media (max-width: 1400px) {
-  #scs-page .treehouse,
-#scs-page .netmatters {
-    padding: 0 2rem 2rem;
+    margin-bottom: 20px;
   }
 }
 #scs-page .treehouse p,
 #scs-page .netmatters p {
   margin-top: 20px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 400;
+  padding-left: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   #scs-page .treehouse p,
 #scs-page .netmatters p {
     font-size: 0.95rem;
@@ -1131,15 +1204,9 @@ body {
 #scs-page .netmatters h3 {
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #5fcf80;
-}
-@media (min-width: 768px) {
-  #scs-page .treehouse h3,
-#scs-page .netmatters h3 {
-    font-size: 1.1rem;
-  }
 }
 @media (min-width: 1200px) {
   #scs-page .treehouse h3,
@@ -1174,10 +1241,12 @@ body {
 }
 #scs-page .treehouse li,
 #scs-page .netmatters li {
-  margin-top: 10px;
-  font-size: 0.8rem;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   #scs-page .treehouse li,
 #scs-page .netmatters li {
     font-size: 0.95rem;
@@ -1197,6 +1266,11 @@ body {
   width: auto;
   height: 100px;
   margin-top: 20px;
+}
+@media (max-width: 590px) {
+  #scs-page .treehouse-netmatters-img {
+    padding-left: 20px;
+  }
 }
 #scs-page .treehouse-netmatters-img img {
   max-width: 100%;
@@ -1527,14 +1601,29 @@ body {
 #projects {
   padding: 3rem 5rem 0rem 5rem;
 }
+@media screen and (max-width: 1240px) {
+  #projects {
+    padding: 3rem 1rem 0rem 1rem;
+  }
+}
+@media screen and (max-width: 1110px) {
+  #projects {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   #projects {
     padding: 3rem 4rem 0rem 4rem;
   }
 }
+@media screen and (max-width: 767px) {
+  #projects {
+    padding: 3rem 2rem 0rem 2rem;
+  }
+}
 
 .icon-visible {
-  display: inline;
+  display: block;
 }
 
 .icon-hidden {

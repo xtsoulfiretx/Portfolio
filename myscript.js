@@ -17,45 +17,12 @@ window.addEventListener('load', function () {
       typeWriter(text, id);
     }
   
-    if (window.innerWidth >= 1024) {
-      $("#hb1").slideUp(0000);
-      $("#hb2").slideUp(0000);
-      $("#hb3").slideUp(0000);
-      $("#hb4").slideUp(0000);
-      $("#hb5").slideUp(0000);
-      $("#hb6").slideUp(0000);
-    } else {
-      $("#hb1").slideDown(0000);
-      $("#hb2").slideDown(0000);
-      $("#hb3").slideDown(0000);
-      $("#hb4").slideDown(0000);
-      $("#hb5").slideDown(0000);
-      $("#hb6").slideDown(0000);
-    }
-  
     $(".links-container").slideUp(0000);
     $(".explanation-text").slideUp(0000);
     createTypewriter("My Name is Alexi Lambrou", "greetings");
     setTimeout(function () {
       createTypewriter("I'm a Web Developer!", "banner-tagline");
     }, 3000);
-  });
-  $(window).resize(function () {
-    if (window.innerWidth >= 1024) {
-      $("#hb1").slideUp(0000);
-      $("#hb2").slideUp(0000);
-      $("#hb3").slideUp(0000);
-      $("#hb4").slideUp(0000);
-      $("#hb5").slideUp(0000);
-      $("#hb6").slideUp(0000);
-    } else {
-      $("#hb1").slideDown(0000);
-      $("#hb2").slideDown(0000);
-      $("#hb3").slideDown(0000);
-      $("#hb4").slideDown(0000);
-      $("#hb5").slideDown(0000);
-      $("#hb6").slideDown(0000);
-    }
   }); // Hambuger click effect //
   
   $(".hamburger").click(function () {
@@ -75,10 +42,7 @@ window.addEventListener('load', function () {
   
   var _loop = function _loop(i) {
     $("#project-".concat(i)).click(function () {
-      if (window.innerWidth >= 1024) {
         $("#hb".concat(i)).slideToggle();
-      } else {
-      }
     });
   };
   
@@ -181,15 +145,21 @@ $("#subject").on('input', function () {
   }
 });
 
+// This block will look through the message field for special characters and disable the submit button if any are found.
+
 $("#message").on('input', function () {
   let isValid = validateString($("#message").val());
 
   if (isValid) {
-    $("#message-warning").removeClass(".icon-visible");
-    $("#message-warning").addClass(".icon-hidden");
+    $("#message-warning").removeClass("icon-visible");
+    $("#message-warning").addClass("icon-hidden");
+    $("#btnSubmit").removeClass("btnoff");
+    $("#btnSubmit").attr("disabled", false);
   } else {
-    $("#message-warning").addClass(".icon-visible");
-    $("#message-warning").removeClass(".icon-hidden");
+    $("#message-warning").addClass("icon-visible");
+    $("#message-warning").removeClass("icon-hidden");
+    $("#btnSubmit").addClass("btnoff");
+    $("#btnSubmit").attr("disabled", true);
   }
 });
 
