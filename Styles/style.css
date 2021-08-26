@@ -890,12 +890,35 @@ body {
 }
 @media (max-width: 1920px) {
   #coding-examples-page #explanation2 {
-    height: 335px;
+    height: 450px;
+    overflow-y: auto;
   }
 }
 @media (max-width: 1340px) {
   #coding-examples-page #explanation2 {
-    height: 490px;
+    height: 450px;
+    overflow-y: auto;
+  }
+}
+#coding-examples-page #explanation1 {
+  overflow-y: scroll;
+}
+@media (max-width: 1023px) {
+  #coding-examples-page #explanation1 {
+    height: 840px;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 1920px) {
+  #coding-examples-page #explanation1 {
+    height: 450px;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 1340px) {
+  #coding-examples-page #explanation1 {
+    height: 450px;
+    overflow-y: auto;
   }
 }
 #coding-examples-page .snippets-container {

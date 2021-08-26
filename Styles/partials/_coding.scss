@@ -34,13 +34,34 @@ body {
         }
 
         @media (max-width: 1920px) {
-            height: 335px;
+            height: 450px;
+            overflow-y: auto;
         }
 
         @media (max-width: 1340px) {
-            height: 490px;
+            height: 450px;
+            overflow-y: auto;
         }
 
+    }
+
+    #explanation1 {
+        overflow-y: scroll;
+        
+        @media (max-width: 1023px) {
+            height: 840px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 1920px) {
+            height: 450px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 1340px) {
+            height: 450px;
+            overflow-y: auto;
+        }
     }
 
    .snippets-container {
