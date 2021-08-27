@@ -14,6 +14,12 @@
         @media (min-width: 768px) and (max-width: 1023px) {
             justify-content: space-between;
         }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            @media screen and (max-width: 767px) {
+                display: block;
+            }
+        }
         
 
         a {
@@ -98,6 +104,8 @@
             }
 
             &:hover {
+                cursor: pointer;
+
                 h2 {
                         color: $link;
                 }
@@ -116,6 +124,7 @@
             }
         }
             .project-img {
+                display: flex;
                 flex-shrink: 1;
                 height: 30vh;
                 overflow: hidden;
@@ -141,6 +150,7 @@
                     vertical-align: top;
                     transform-origin: top;
                     transition: all .5s;
+                    overflow: hidden;
 
                     &:hover {
                         opacity: .75;

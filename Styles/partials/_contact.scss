@@ -157,7 +157,6 @@
             width: 50%;
             .icon-container {
                 width: 10%;
-                padding-right: 10px;
             }
         }
     }
@@ -171,13 +170,22 @@
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             border-left: none;
-            width: 10%;
+            width: 5%;
             height: 50px;
             padding: 5px;
             align-items: center;
             justify-content: center;
+
+            @media (max-width:768px) {
+                width: 10%;
+            }
             i {
                 position: absolute;
+                margin-left: -12px;
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                   margin-top: -8px;
+                   margin-left: -15px;
+                }
             }
         }
     }
@@ -193,7 +201,7 @@
         background-color: $black;
         padding: 1px 8px;
         margin-bottom: 1em;
-        width: 90%;
+        width: 95%;
         height: 50px;
         font-size: 1rem;
     }

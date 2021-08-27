@@ -1,6 +1,5 @@
-"use strict";
+"use strict"; // Typing effect for header H1 element //
 
-// Typing effect for header H1 element //
 window.addEventListener('load', function () {
   function createTypewriter(text, id) {
     var i = 0;
@@ -145,7 +144,7 @@ $("#subject").on('input', function () {
 $("#message").on('input', function () {
   var isValid = validateString($("#message").val());
 
-  if (isValid) {
+  if (isValid || !$("#message").val()) {
     $("#message-warning").removeClass("icon-visible");
     $("#message-warning").addClass("icon-hidden");
     $("#btnSubmit").removeClass("btnoff");
