@@ -54,7 +54,7 @@ for (var i = 1; i <= 6; i++) {
 // to let the user know if they have left any of the inputs empty.
 
 var EmailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-var characterReg = /^\s*[a-zA-Z0-9,\s]+\s*$/;
+var characterReg = /^\s*[a-zA-Z0-9\.\!\?\@\-,\s]+\s*$/;
 
 var validateString = function validateString(value) {
   if (value.match(characterReg) && value.length > 0) {
