@@ -81,12 +81,16 @@ $("#email").on('input', function () {
     $(".email-neutral").addClass("icon-hidden");
     $(".email-tick").removeClass("icon-hidden");
     $(".email-tick").addClass("icon-visible");
+    $("#btnSubmit").removeClass("btnoff");
+    $("#btnSubmit").attr("disabled", false);
   } else {
     $(".email-tick").removeClass("icon-visible");
     $(".email-tick").addClass("icon-hidden");
     $(".email-neutral").addClass("icon-hidden");
     $(".email-cross").removeClass("icon-hidden");
     $(".email-cross").addClass("icon-visible");
+    $("#btnSubmit").addClass("btnoff");
+    $("#btnSubmit").attr("disabled", true);
   }
 });
 $("#first-name-input").on('input', function () {
@@ -98,12 +102,16 @@ $("#first-name-input").on('input', function () {
     $(".fname-neutral").addClass("icon-hidden");
     $(".fname-tick").removeClass("icon-hidden");
     $(".fname-tick").addClass("icon-visible");
+    $("#btnSubmit").removeClass("btnoff");
+    $("#btnSubmit").attr("disabled", false);
   } else {
     $(".fname-neutral").addClass("icon-hidden");
     $(".fname-tick").addClass("icon-hidden");
     $(".fname-tick").removeClass("icon-visible");
     $(".fname-cross").removeClass("icon-hidden");
     $(".fname-cross").addClass("icon-visible");
+    $("#btnSubmit").addClass("btnoff");
+    $("#btnSubmit").attr("disabled", true);
   }
 });
 $("#last-name-input").on('input', function () {
@@ -115,12 +123,16 @@ $("#last-name-input").on('input', function () {
     $(".lname-neutral").addClass("icon-hidden");
     $(".lname-tick").removeClass("icon-hidden");
     $(".lname-tick").addClass("icon-visible");
+    $("#btnSubmit").removeClass("btnoff");
+    $("#btnSubmit").attr("disabled", false);
   } else {
     $(".lname-neutral").addClass("icon-hidden");
     $(".lname-tick").addClass("icon-hidden");
     $(".lname-tick").removeClass("icon-visible");
     $(".lname-cross").removeClass("icon-hidden");
     $(".lname-cross").addClass("icon-visible");
+    $("#btnSubmit").addClass("btnoff");
+    $("#btnSubmit").attr("disabled", true);
   }
 });
 $("#subject").on('input', function () {
@@ -132,12 +144,16 @@ $("#subject").on('input', function () {
     $(".subject-neutral").addClass("icon-hidden");
     $(".subject-tick").removeClass("icon-hidden");
     $(".subject-tick").addClass("icon-visible");
+    $("#btnSubmit").removeClass("btnoff");
+    $("#btnSubmit").attr("disabled", false);
   } else {
     $(".subject-neutral").addClass("icon-hidden");
     $(".subject-tick").addClass("icon-hidden");
     $(".subject-tick").removeClass("icon-visible");
     $(".subject-cross").removeClass("icon-hidden");
     $(".subject-cross").addClass("icon-visible");
+    $("#btnSubmit").addClass("btnoff");
+    $("#btnSubmit").attr("disabled", true);
   }
 }); // This block will look through the message field for special characters and disable the submit button if any are found.
 

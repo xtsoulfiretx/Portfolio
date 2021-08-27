@@ -27,11 +27,6 @@ body {
     
     #explanation2 {
         overflow-y: scroll;
-        
-        @media (max-width: 1023px) {
-            height: 840px;
-            overflow-y: auto;
-        }
 
         @media (max-width: 1920px) {
             height: 450px;
@@ -43,15 +38,14 @@ body {
             overflow-y: auto;
         }
 
+        @media (max-width: 1023px) {
+            height: 350px;
+            overflow-y: auto;
+        }
     }
 
     #explanation1 {
         overflow-y: scroll;
-        
-        @media (max-width: 1023px) {
-            height: 840px;
-            overflow-y: auto;
-        }
 
         @media (max-width: 1920px) {
             height: 450px;
@@ -60,6 +54,11 @@ body {
 
         @media (max-width: 1340px) {
             height: 450px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 1023px) {
+            height: 350px;
             overflow-y: auto;
         }
     }
@@ -121,6 +120,10 @@ body {
            border-radius: 3px;
            padding: 10px 5px;
            margin-bottom: 2rem;
+
+           @media (max-width: 1023px) {
+               font-size: 1rem;
+           }
 
            p {
                margin-bottom: 1rem;
