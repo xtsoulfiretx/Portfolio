@@ -489,6 +489,42 @@
   color: #cf0e0e;
 }
 
+.hidden {
+  display: none !important;
+}
+
+#successful-message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
+  font-family: "Roboto", serif;
+  padding: 5px;
+}
+#successful-message .tick-icon {
+  font-size: 2rem;
+}
+#successful-message h3 {
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+#failure-message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
+  font-family: "Roboto", serif;
+  padding: 5px;
+}
+#failure-message h3 {
+  padding-left: 10px;
+  font-weight: 500;
+}
+#failure-message .cross-icon {
+  font-size: 2rem;
+}
+
 nav {
   display: none;
   width: 13.5em;

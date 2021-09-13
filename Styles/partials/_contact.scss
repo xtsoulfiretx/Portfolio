@@ -240,3 +240,43 @@
     .cross-icon {
         color: $red;
     }
+
+    .hidden {
+        display: none!important;
+    }
+
+    #successful-message {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        color: #fff;
+        font-family: 'Roboto', serif;
+        padding: 5px;
+
+        .tick-icon {
+        font-size: 2rem;
+        }
+
+        h3 {
+            padding-left: 10px;
+            font-weight: 500;
+        }
+    }
+
+    #failure-message {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        color: #fff;
+        font-family: 'Roboto', serif;
+        padding: 5px;
+
+        h3 {
+            padding-left: 10px;
+            font-weight: 500;
+        }
+
+        .cross-icon {
+        font-size: 2rem;
+        }
+    }

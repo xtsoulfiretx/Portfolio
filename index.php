@@ -1,3 +1,8 @@
+<?php 
+    ob_start();
+        require_once __DIR__ . "/src/includes/bootstrap.php";
+        include_once __DIR__ . "/src/includes/post-form.php";
+        ?>
 <!DOCTYPE html>
     <html lang="en-gb">
         <head>
@@ -98,10 +103,11 @@
                                 <a href="mailto:alexi.lambrou@gmail.com"><h3>alexi.lambrou&commat;gmail.com</h3></a>
                             </div>
 
-                            <form id="contact-form" method="POST">
+                            <form id="contact-form" method="POST" action="" accept-charset="UTF-8">
+                                <input type="hidden" name="action" value="contact-form">
                                 <div class="first-line-form-input">
                                     <div class="input-container fname-input">
-                                        <input type="text" placeholder="First Name" id="first-name-input" class="style-input">
+                                        <input type="text" placeholder="First Name" id="first-name-input" name="first-name-input" class="style-input">
                                         <div class="icon-container">
                                             <i class="fas fa-check-circle fname-tick tick-icon icon-hidden"></i>
                                             <i class="fas fa-minus-circle fname-neutral neutral-icon"></i>
@@ -109,7 +115,7 @@
                                         </div>
                                     </div>
                                     <div class="input-container lname-input">
-                                        <input type="text" placeholder="Last Name" id="last-name-input" class="style-input">
+                                        <input type="text" placeholder="Last Name" id="last-name-input" name="last-name-input" class="style-input">
                                         <div class="icon-container">
                                             <i class="fas fa-check-circle lname-tick tick-icon icon-hidden"></i>
                                             <i class="fas fa-minus-circle lname-neutral neutral-icon"></i>
@@ -118,7 +124,7 @@
                                     </div>
                                 </div>
                                 <div class="input-container email-input">
-                                    <input type="email" placeholder="Email Address*" id="email" class="style-input">
+                                    <input type="email" placeholder="Email Address*" id="email" name="email" class="style-input">
                                     <div class="icon-container">
                                         <i class="fas fa-check-circle email-tick tick-icon icon-hidden"></i>
                                         <i class="fas fa-minus-circle email-neutral neutral-icon"></i>
@@ -126,17 +132,25 @@
                                     </div>
                                 </div>
                                 <div class="input-container subject-input">
-                                    <input type="text" placeholder="Subject" id="subject" class="style-input">
+                                    <input type="text" placeholder="Subject" id="subject" name="subject" class="style-input">
                                     <div class="icon-container">
                                         <i class="fas fa-check-circle subject-tick tick-icon icon-hidden"></i>
                                         <i class="fas fa-minus-circle subject-neutral neutral-icon"></i>
                                         <i class="fas fa-times-circle subject-cross cross-icon icon-hidden"></i>
                                     </div>
                                 </div>
-                                <textarea placeholder="Message" id="message" class="style-input" rows="6" style="resize: none;"></textarea>
+                                <textarea placeholder="Message" id="message" name="message" class="style-input" rows="6" style="resize: none;"></textarea>
                                 <p id="message-warning" class="icon-hidden">It seems your message is empty or contains special characters,
                                     please adjust your message before submission.
                                 </p>
+                                <div id="successful-message" class="hidden">
+                                    <i class="fas fa-check-circle tick-icon"></i>
+                                    <h3>Your Message has been sent!</h3>
+                                </div>
+                                <div id="failure-message" class="hidden">
+                                    <i class="fas fa-times-circle cross-icon"></i>
+                                    <h3>Your Message has not been sent</h3>
+                                </div>
                                 <button id="btnSubmit">Submit</button>
                             </form>
 
@@ -151,7 +165,7 @@
 
                 <nav>
                 <div id="nav-content"> 
-                        <a href="index.html#top" class="nav-initial">
+                        <a href="index.php#top" class="nav-initial">
                             <div class="circle-wrap"><h2 class="letters">A.L</h2></div>
                         </a>
                         <ul id="nav-list">
@@ -159,7 +173,7 @@
                             <li><a href="#projects-content">My Portfolio</a></li>
                             <li><a href="coding_examples.html">Coding Examples</a></li>
                             <li><a href="scs_scheme.html">SCS Scheme</a></li>
-                            <li><a href="index.html#contact" class="contact-nav">Contact Me</a></li>
+                            <li><a href="index.php#contact" class="contact-nav">Contact Me</a></li>
                         </ul>
                         <ul id="nav-social">
                             <li><a href="https://twitter.com/AlexiLambrou" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
@@ -170,7 +184,7 @@
                 </nav>
                 <div id="mobile-nav">
                     <div class="mobile-nav-wrapper">
-                            <a href="index.html#top" class="nav-initial">
+                            <a href="index.php#top" class="nav-initial">
                                 <div class="circle-wrap"><h2 class="letters">A.L</h2></div>
                             </a>
                             <button class="hamburger hamburger--collapse" type="button">
@@ -185,7 +199,7 @@
                             <li><a href="#projects-content">My Portfolio</a></li>
                             <li><a href="coding_examples.html">Coding Examples</a></li>
                             <li><a href="scs_scheme.html">SCS Scheme</a></li>
-                            <li><a href="index.html#contact" class="contact-nav">Contact Me</a></li>
+                            <li><a href="index.php#contact" class="contact-nav">Contact Me</a></li>
                         </ul>
                     </div>
                 </div>

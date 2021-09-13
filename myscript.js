@@ -172,3 +172,10 @@ $("#message").on('input', function () {
     $("#btnSubmit").attr("disabled", true);
   }
 }); // End of input validation.
+
+$('#contact-form').on("submit", function () {
+  if (!$.trim($('#first-name-input').val()).length) {
+    e.preventDefault();
+    $("#failure-message").removeClass("hidden");
+  }
+})
