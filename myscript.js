@@ -38,7 +38,11 @@ $("#whats-this1").click(function () {
 $("#whats-this2").click(function () {
   $("#whats-this2").toggleClass("code-shown");
   $("#explanation2").slideToggle();
-}); // Projects Hidden boxes //
+});
+$("#whats-this3").click(function () {
+  $("#whats-this3").toggleClass("code-shown");
+  $("#explanation3").slideToggle();
+}) // Projects Hidden boxes //
 
 var _loop = function _loop(i) {
   $("#project-".concat(i)).click(function () {

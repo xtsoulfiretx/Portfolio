@@ -144,6 +144,12 @@ body {
     }
    }
 
+   .s3 {
+       .snippet-code {
+           height: auto!important;
+       }
+   }
+
    .snippet-code {
            margin: 20px 10px;
            background-color: #111111;

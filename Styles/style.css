@@ -1044,6 +1044,9 @@ body {
 #coding-examples-page .s2 .snippet-code .code-example {
   font-size: 0.73rem;
 }
+#coding-examples-page .s3 .snippet-code {
+  height: auto !important;
+}
 #coding-examples-page .snippet-code {
   margin: 20px 10px;
   background-color: #111111;

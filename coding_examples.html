@@ -20,7 +20,7 @@
                     <header>
                         <h1>Coding Examples</h1>
                     </header>
-                    <div id="code-snippets">
+                    < id="code-snippets">
                         <div class="snippets-container">
                             <div class="snippet"> <!--Start of code example for HTML/Css Reflection-->
                                 <h2>HTML & CSS Reflection</h2>
@@ -168,8 +168,49 @@
                                 </div>
                                 <a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php#SQLEDITOR" target="_blank" class="see-me-button">Try Me Out</a>
                             </div>
+                            <div class="snippet s3">
+                                <h2>PHP Reflection</h2>
+                                <div class="snippet-code fancy-scroll"><!--Start of Snippet Example--> 
+                                    <pre>
+                                        <code class="code-example">
+function getLatestArticles() {
+    try {
+        require __DIR__ . "/connection.php";
+
+        $result = $db->query("
+        SELECT * FROM articles ORDER BY article_id ASC LIMIT 3
+        ");
+        $result->execute();
+    } catch (Exception $e) {
+        return false;
+    }
+
+    return $result->fetchAll(PDO::FETCH_ASSOC);
+}
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="show-code" id="whats-this3">
+                                    <h3>What is this?</h3>
+                                </div>
+                                <div class="explanation-text fancy-scroll" id="explanation3">
+                                    <p>This is an exmple of a php function which I have called "getLatestArticles". </p>
+
+                                    <p>This code uses what's refered to as a try catch block which is meant to run the code inside the try section and if any errors occur then 
+                                        the catch block will do as it's name sake and catch the error. It will then proceed to "Throw" the error by writing it to the main 
+                                        page in a somewhat readable manner.
+                                    </p>
+                                    <p>This function specifically will select every item inside the 'articles' table and display them in an ascending order based by 
+                                        every item's invisible 'article_id' property which is formed when each 'article' is made.
+                                    </p>
+                                    <p>The table and items have to be made outside of the site in this example but it also establishes a connection to the database with the require __DIR__ 
+                                        or 'directory' and file path to the "connection.php" file.
+                                    </p>
+                                    <p>You can see this in action on my netmatters site recreation by looking at the three news article's cards near the bottom of the page.</p>
+                                </div>
+                                <a href="https://netmatters.alexi-lambrou.netmatters-scs.co.uk/" target="_blank" class="see-me-button">Try Me Out</a>
+                            </div>
                         </div>
-                    </div>
                 </main>
 
                 <nav>
