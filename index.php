@@ -60,11 +60,14 @@
                             </li>
 
                             <li id="project-3" class="project">
-                                <div class="project-img"><img src="images/Netmatters-site-example.jpg" data-object-fit alt="Screenshot of Netmatters site recreation project"></div>
-                                <h2>Project 3</h2>
+                                <div class="project-img"><img src="images/Souls-Sanctum.png" data-object-fit alt="Screenshot of Wordpress project"></div>
+                                <h2>Wordpress Reflection</h2>
                                 <span class="project-view">View Project
                                 <i class="fas fa-arrow-right"></i></span>
-                                <div class="hidden-box" id="hb3"><p>I am a placeholder, I will be filled soon but in the meantime i will just pop up from time to time.</p></div>
+                                <div class="hidden-box" id="hb3">
+                                    <p>A Photography blog made using Wordpress based around my own hobby to paint miniatures.</p></div>
+                                    <button><a href="https://wordpress.alexi-lambrou.netmatters-scs.co.uk/" target="_blank">Click here to see me in use!</a></button>
+                                    <button><a href="https://github.com/xtsoulfiretx/wordpress" target="_blank">Click here to see my source code!</a></button>
                             </li>
 
                             <li id="project-4" class="project">
