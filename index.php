@@ -72,7 +72,7 @@
                             </li>
 
                             <li id="project-4" class="project">
-                                <div class="project-img"><img src="images/Pair-project" data-object-fit alt="Screenshot of Pair-Project project"></div>
+                                <div class="project-img"><img src="images/Pair-project.png" data-object-fit alt="Screenshot of Pair-Project project"></div>
                                 <h2>Pair's Project</h2>
                                 <span class="project-view">View Project
                                 <i class="fas fa-arrow-right"></i></span>
